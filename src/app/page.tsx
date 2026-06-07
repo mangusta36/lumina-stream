@@ -8,9 +8,18 @@ import Pricing from "@/components/sections/Pricing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LuminaStream | Premium 4K IPTV Service Provider",
+  title: "Flash 4K IPTV | Premium IPTV Service Provider",
   description:
-    "Experience the next generation of television with LuminaStream. Over 20,000 channels, 4K quality, and instant setup.",
+    "Experience premium entertainment with Flash 4K IPTV. Enjoy over 20,000 live channels, movies, sports, and 4K streaming with instant activation.",
+  keywords: [
+    "Flash 4K IPTV",
+    "IPTV Subscription",
+    "4K IPTV",
+    "Premium IPTV",
+    "Live TV Streaming",
+    "Sports IPTV",
+    "Movies IPTV",
+  ],
 };
 
 export default function Home() {

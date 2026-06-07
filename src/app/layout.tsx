@@ -5,8 +5,26 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LuminaStream | Next-Gen 4K Streaming",
-  description: "Experience premium IPTV with over 20,000 channels and ultra-low latency.",
+  title: "Flash 4K IPTV | Premium IPTV Subscription",
+  description:
+    "Flash 4K IPTV offers 20,000+ live channels, movies, sports, and ultra-fast 4K streaming with instant activation and 24/7 support.",
+
+  keywords: [
+    "Flash 4K IPTV",
+    "IPTV Subscription",
+    "4K IPTV",
+    "Premium IPTV",
+    "Live TV Streaming",
+    "IPTV Service",
+    "Sports IPTV",
+    "Movies IPTV",
+  ],
+
+  icons: {
+    icon: "/icones.png",
+    shortcut: "/icones.png",
+    apple: "/icones.png",
+  },
 };
 
 export default function RootLayout({
