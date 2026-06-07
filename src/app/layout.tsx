@@ -5,9 +5,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.flash4kiptv.vip'), // هادي ضرورية فـ Next.js باش يخدمو الروابط صحاح
   title: "Flash 4K IPTV | Premium IPTV Subscription",
   description:
     "Flash 4K IPTV offers 20,000+ live channels, movies, sports, and ultra-fast 4K streaming with instant activation and 24/7 support.",
+
+  // هادا هو الحل ديال المشكل الأول (Canonical URL)
+  alternates: {
+    canonical: '/',
+  },
 
   keywords: [
     "Flash 4K IPTV",
@@ -20,15 +26,14 @@ export const metadata: Metadata = {
     "Movies IPTV",
   ],
 
-  // هادو هما الزيادة اللي غادي تحل ليك مشكل الـ Social Media Tags
   openGraph: {
     title: "Flash 4K IPTV | Premium IPTV Subscription",
     description: "20,000+ live channels, movies, and sports in Ultra HD 4K quality.",
-    url: "https://lumina-stream.com", // تأكد من تعويض هاد الرابط برابط السيت ديالك الحقيقي
+    url: "https://www.flash4kiptv.vip", 
     siteName: "Flash 4K IPTV",
     images: [
       {
-        url: "/slides/image1.jpg", // التصويرة اللي غتبان فاش تبارطاجي السيت
+        url: "/slides/image1.jpg",
         width: 1200,
         height: 630,
         alt: "Flash 4K IPTV - Premium Service",

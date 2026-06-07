@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://lumina-stream.com/sitemap.xml',
+    sitemap: 'https://www.flash4kiptv.vip/sitemap.xml',
   }
 }
