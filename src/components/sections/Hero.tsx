@@ -45,7 +45,8 @@ const PRICING_PLANS = [
   },
 ];
 
-const WHATSAPP_LINK = "https://wa.me/212600000000?text=Hello! I want to try the free trial.";
+// النمرة الجديدة هنا (بدون + وبدون فراغات باش يخدم الرابط مزيان)
+const WHATSAPP_LINK = "https://wa.me/447828714977?text=Hello! I want to try the free trial of Flash 4K IPTV.";
 
 export default function HeroPage() {
   const [current, setCurrent] = useState(0);
@@ -101,7 +102,16 @@ export default function HeroPage() {
               <div className="relative w-[320px] md:w-[480px] aspect-[16/10] bg-black rounded-[2rem] p-2 border border-white/20 shadow-2xl overflow-hidden backdrop-blur-3xl">
                 <div className="relative h-full w-full rounded-[1.5rem] overflow-hidden">
                   <AnimatePresence mode="wait">
-                    <motion.img key={current} src={slides[current]} initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.8 }} className="absolute inset-0 w-full h-full object-cover" />
+                    <motion.img 
+                      key={current} 
+                      src={slides[current]} 
+                      alt={`flash 4k iptv cinematic showcase slide ${current + 1}`} 
+                      initial={{ opacity: 0, scale: 1.1 }} 
+                      animate={{ opacity: 1, scale: 1 }} 
+                      exit={{ opacity: 0 }} 
+                      transition={{ duration: 0.8 }} 
+                      className="absolute inset-0 w-full h-full object-cover" 
+                    />
                   </AnimatePresence>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 </div>
@@ -117,7 +127,7 @@ export default function HeroPage() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 items-center justify-center">
             {brands.map((b, i) => (
               <div key={i} className="flex justify-center items-center h-10 md:h-14">
-                <img src={b.logo} alt={`${b.name} - streaming with flash 4k iptv`} className="max-h-full w-auto object-contain hover:scale-110 transition-all duration-300" />
+                <img src={b.logo} alt={`${b.name} logo - flash 4k iptv official partner`} className="max-h-full w-auto object-contain hover:scale-110 transition-all duration-300" />
               </div>
             ))}
           </div>
@@ -150,7 +160,7 @@ export default function HeroPage() {
                     <li key={idx} className="flex items-center gap-3 text-sm text-gray-300 font-light italic"><CheckCircle2 size={16} className="text-cyan-500" />{feat}</li>
                   ))}
                 </ul>
-                <a href={WHATSAPP_LINK} className={`block text-center py-4 rounded-2xl font-black uppercase tracking-tighter transition-all ${plan.recommended ? 'bg-cyan-500 text-black' : 'bg-white/10 text-white hover:bg-white/20'}`}>Get Started</a>
+                <a href={WHATSAPP_LINK} target="_blank" className={`block text-center py-4 rounded-2xl font-black uppercase tracking-tighter transition-all ${plan.recommended ? 'bg-cyan-500 text-black' : 'bg-white/10 text-white hover:bg-white/20'}`}>Get Started</a>
               </motion.div>
             ))}
           </div>
@@ -184,4 +194,3 @@ export default function HeroPage() {
     </main>
   );
 }
-

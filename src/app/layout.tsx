@@ -20,6 +20,31 @@ export const metadata: Metadata = {
     "Movies IPTV",
   ],
 
+  // هادو هما الزيادة اللي غادي تحل ليك مشكل الـ Social Media Tags
+  openGraph: {
+    title: "Flash 4K IPTV | Premium IPTV Subscription",
+    description: "20,000+ live channels, movies, and sports in Ultra HD 4K quality.",
+    url: "https://lumina-stream.com", // تأكد من تعويض هاد الرابط برابط السيت ديالك الحقيقي
+    siteName: "Flash 4K IPTV",
+    images: [
+      {
+        url: "/slides/image1.jpg", // التصويرة اللي غتبان فاش تبارطاجي السيت
+        width: 1200,
+        height: 630,
+        alt: "Flash 4K IPTV - Premium Service",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Flash 4K IPTV | Premium Streaming",
+    description: "Enjoy ultra-fast 4K streaming with 24/7 support.",
+    images: ["/slides/image1.jpg"],
+  },
+
   icons: {
     icon: "/icones.png",
     shortcut: "/icones.png",

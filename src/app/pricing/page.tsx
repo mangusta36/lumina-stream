@@ -40,7 +40,8 @@ export default function PricingPage() {
     }
   ];
 
-  const WHATSAPP_NUMBER = "123456789"; // نمرتك هنا
+  // النمرة الجديدة هنا
+  const WHATSAPP_NUMBER = "447828714977"; 
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-primary/30">
