@@ -1,17 +1,38 @@
-"use client";
-import { useParams } from "next/navigation";
-import { blogPosts } from "@/lib/posts"; // السطر المهم
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
+import { Calendar, User, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { blogPosts } from "@/lib/posts";
 
-export default function BlogPostDetail() {
-  const params = useParams();
+type BlogPostPageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export function generateMetadata({ params }: BlogPostPageProps): Metadata {
   const post = blogPosts.find((p) => p.id === params.id);
 
   if (!post) {
-    return <div className="text-white text-center pt-40">Post Not Found</div>;
+    return {
+      title: "Post Not Found | Flash 4K IPTV Blog",
+      description: "the requested flash 4k iptv blog post could not be found.",
+    };
+  }
+
+  return {
+    title: post.seoTitle ?? post.title,
+    description: post.metaDescription ?? post.excerpt,
+  };
+}
+
+export default function BlogPostDetail({ params }: BlogPostPageProps) {
+  const post = blogPosts.find((p) => p.id === params.id);
+
+  if (!post) {
+    notFound();
   }
 
   return (
@@ -25,13 +46,21 @@ export default function BlogPostDetail() {
           {post.title}
         </h1>
         <div className="flex gap-6 text-gray-500 text-[10px] font-black mb-10 border-b border-white/5 pb-8 uppercase">
-           <span><Calendar size={14} className="inline mr-2 text-primary"/> {post.date}</span>
-           <span><User size={14} className="inline mr-2 text-primary"/> {post.author}</span>
+          <span>
+            <Calendar size={14} className="inline mr-2 text-primary" /> {post.date}
+          </span>
+          <span>
+            <User size={14} className="inline mr-2 text-primary" /> {post.author}
+          </span>
         </div>
-        <img src={post.image} className="w-full h-[500px] object-cover rounded-[3rem] mb-16 shadow-2xl" />
-        <div 
+        <img
+          src={post.image}
+          alt={post.imageAlt ?? post.title}
+          className="w-full h-[500px] object-cover rounded-[3rem] mb-16 shadow-2xl"
+        />
+        <div
           className="prose prose-invert max-w-none text-gray-300 italic text-lg leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: post.content }} 
+          dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </div>
       <Footer />

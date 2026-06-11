@@ -2,6 +2,208 @@
 
 export const blogPosts = [
   {
+    id: "organize-iptv-channel-list-2026",
+    title: "how to organize your flash 4k iptv channel list",
+    seoTitle: "IPTV Channel List Organization Guide 2026 | Flash 4K IPTV",
+    metaDescription:
+      "learn how to sort favorites, clean up categories, and move faster through flash 4k iptv with a cleaner channel list and smarter navigation.",
+    category: "GUIDE",
+    date: "Jun 11, 2026",
+    author: "FLASH TEAM",
+    image: "/images/flash4k-blog-epg.webp",
+    imageAlt:
+      "a hand using a remote control in front of a smart tv and tablet for organizing flash 4k iptv channels",
+    excerpt:
+      "build a cleaner flash 4k iptv layout with favorites, categories, search shortcuts, and a simple setup that makes every click faster.",
+    content: `
+      <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
+        <section>
+          <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">1. why channel organization changes everything</h2>
+          <p>
+            the fastest way to improve your <strong>flash 4k iptv</strong> experience is not a new box or a bigger tv. it is a cleaner channel structure. when your favorites, sports groups, movie categories, and local channels are arranged with intention, you spend less time searching and more time watching. that means fewer clicks, less frustration, and a much better feel every time you open the app.
+          </p>
+          <p class="mt-4">
+            if you are still scrolling through a giant mixed list, start with a simple rule: only keep the channels you actually use in your main view. everything else can live one tap away. for player recommendations that support this workflow well, compare the setup advice in our <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">best app guide</a>.
+          </p>
+        </section>
+
+        <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">2. build a favorites-first layout</h2>
+          <p>
+            your favorites list should behave like your home screen. put the channels you open daily at the top, then separate the rest into groups you can recognize instantly. this is especially useful for households that watch live sports, news, and entertainment in different rooms.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 italic">
+            <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
+                <h3 class="text-white font-black uppercase mb-3 underline decoration-primary">daily watchlist</h3>
+                <p class="text-sm">keep your top 10 channels in one place so <strong>flash 4k iptv</strong> feels immediate instead of overwhelming.</p>
+            </div>
+            <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
+                <h3 class="text-white font-black uppercase mb-3 underline decoration-primary">room-based groups</h3>
+                <p class="text-sm">create separate group names for sports, kids, and movies to make fast switching feel natural on shared devices.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6 border-b border-primary/20 pb-4">3. tidy categories and rename what matters</h2>
+          <p>
+            many iptv players let you rename groups, hide duplicates, and remove noise from the main grid. use that flexibility. if two channel names point to the same content, keep the clearest one and hide the rest. that one cleanup pass makes the entire system feel more premium.
+          </p>
+          <h3 class="text-xl font-bold text-white mt-8 mb-4 uppercase">keep the main screen simple</h3>
+          <p>
+            a strong layout usually has just four visible lanes: live tv, sports, movies, and favorites. everything else can sit deeper in the menu. when the interface is this simple, <strong>flash 4k iptv</strong> becomes much faster to use on smart tv remotes and mobile apps alike.
+          </p>
+          <div class="bg-primary/10 p-6 rounded-2xl my-6 border-l-4 border-primary shadow-lg">
+            <p class="text-white font-bold">tip: if your player allows pinning categories to the top, use it for your most-watched groups first.</p>
+          </div>
+        </section>
+
+        <section class="border-y border-white/5 py-12 my-12">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6">4. use search, epg, and watch history together</h2>
+          <p>
+            search is the secret weapon for anyone who already knows what they want. combine it with epg and watch history so you can jump straight back into the last channel, the next live event, or the series you paused yesterday. if you want a deeper player comparison, our <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">app comparison article</a> breaks down which tools handle this best.
+          </p>
+          <p class="mt-4">
+            for technical app tweaks, our <a href="/blog/smart-tv-optimization-guide" class="text-primary underline underline-offset-4 font-bold">smart tv optimization guide</a> shows how to make menu navigation smoother on Samsung and LG devices.
+          </p>
+        </section>
+
+        <section class="bg-white/5 p-10 rounded-[3rem] mt-20 border border-white/5 shadow-inner">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2">frequently asked questions</h2>
+          <div class="space-y-10">
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">should i create a separate favorites list for each device?</h3>
+              <p class="text-gray-400 mt-2 font-medium">yes, if different rooms have different viewing habits. a small favorites list on each device is easier to scan than one giant shared list.</p>
+            </div>
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">what is the best first cleanup step?</h3>
+              <p class="text-gray-400 mt-2 font-medium">remove duplicates and keep only the categories you actually use. that one step makes <strong>flash 4k iptv</strong> feel much faster right away.</p>
+            </div>
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">can support help if my list is still messy?</h3>
+              <p class="text-gray-400 mt-2 font-medium">yes. our team can help you choose the right setup and plan through the <a href="/support" class="text-primary underline underline-offset-4 font-bold">support page</a>.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="mt-20 text-center border-t border-white/10 pt-12">
+          <p class="text-white font-black italic uppercase text-2xl tracking-tighter shadow-primary">
+            ready for a cleaner setup? explore plans or speak with support and turn your list into a one-tap experience.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/pricing" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-black font-black uppercase tracking-widest text-sm">view pricing</a>
+            <a href="/support" class="inline-flex items-center justify-center rounded-full border border-white/15 px-8 py-4 text-white font-black uppercase tracking-widest text-sm">get support</a>
+          </div>
+        </footer>
+      </div>
+    `
+  },
+  {
+    id: "fix-epg-catchup-iptv-2026",
+    title: "how to fix epg and catch-up tv on flash 4k iptv",
+    seoTitle: "IPTV EPG Fix Guide 2026 | Flash 4K IPTV Catch-Up TV",
+    metaDescription:
+      "learn how to fix missing epg data, wrong times, and catch-up tv issues on flash 4k iptv with a practical 2026 troubleshooting checklist.",
+    category: "TROUBLESHOOTING",
+    date: "Jun 9, 2026",
+    author: "FLASH TEAM",
+    image: "/images/flash4k-blog-devices.webp",
+    imageAlt:
+      "a living room setup featuring a tablet, smartphone, tv, and remote control for managing flash 4k iptv playback",
+    excerpt:
+      "fix missing guide data, wrong schedules, and catch-up issues on flash 4k iptv with a practical checklist for better playback.",
+    content: `
+      <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
+        <section>
+          <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">1. what epg actually depends on</h2>
+          <p>
+            an epg issue usually has three causes: the playlist is stale, the device clock is wrong, or the player is not reading the guide source correctly. once you know that, the fix becomes much easier. instead of guessing, you can move through the problem one layer at a time and restore the guide in a controlled way.
+          </p>
+          <p class="mt-4">
+            if the channels are loading but the guide is blank, start by comparing your player settings with the setup advice in our <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">iptv player guide</a>. different apps expose the epg differently, and that matters.
+          </p>
+        </section>
+
+        <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">2. check time zone and device clock first</h2>
+          <p>
+            if the device time is off, the guide can look broken even when the data is fine. set the correct time zone, enable automatic time syncing, and restart the app. that simple step fixes a surprising number of catch-up and schedule problems on <strong>flash 4k iptv</strong>.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 italic">
+            <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
+                <h3 class="text-white font-black uppercase mb-3 underline decoration-primary">match the local zone</h3>
+                <p class="text-sm">a wrong timezone can shift live events and make the guide look empty or out of order.</p>
+            </div>
+            <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
+                <h3 class="text-white font-black uppercase mb-3 underline decoration-primary">restart after changes</h3>
+                <p class="text-sm">many players only rebuild the epg after a full app restart, not just a menu refresh.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6 border-b border-primary/20 pb-4">3. refresh the playlist and clear stale guide data</h2>
+          <p>
+            the safest reset is simple: refresh the playlist, clear the app cache if needed, and force the guide to reload. if the issue still appears, wait a few minutes and refresh again. catch-up tv often depends on the same data source, so both features can fail together when the cache is stuck.
+          </p>
+          <h3 class="text-xl font-bold text-white mt-8 mb-4 uppercase">when the guide is present but wrong</h3>
+          <p>
+            if channel names are visible but the schedule is wrong, the player may be reading an outdated epg file. that is when a deeper reset helps. our <a href="/blog/stop-iptv-buffering-forever" class="text-primary underline underline-offset-4 font-bold">buffering guide</a> also covers cache and network refresh habits that keep playback stable.
+          </p>
+        </section>
+
+        <section class="border-y border-white/5 py-12 my-12">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6">4. catch-up tv needs a clean app and a stable source</h2>
+          <p>
+            catch-up tv is more sensitive than live tv because it depends on a time window. if the source is out of sync, the feature can disappear even when the channel itself works. test another channel, then compare the player behavior on a second device. if one device works and the other does not, the issue is local.
+          </p>
+          <p class="mt-4">
+            this is also where the right player matters. some apps handle guide caching and catch-up indexing better than others, so a player upgrade can solve the problem faster than repeated manual refreshes.
+          </p>
+        </section>
+
+        <section class="bg-primary/10 p-8 rounded-[2rem] border border-primary/20">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-6">5. quick recovery checklist</h2>
+          <ul class="list-disc ml-8 space-y-4 font-medium">
+            <li>set the correct time zone and automatic clock sync.</li>
+            <li>refresh the playlist and epg source.</li>
+            <li>clear the app cache if the guide remains blank.</li>
+            <li>test catch-up on another channel or device.</li>
+            <li>switch to a better player if the current one keeps failing.</li>
+          </ul>
+        </section>
+
+        <section class="bg-white/5 p-10 rounded-[3rem] mt-20 border border-white/5 shadow-inner">
+          <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2">frequently asked questions</h2>
+          <div class="space-y-10">
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">why is my epg blank but the channels work?</h3>
+              <p class="text-gray-400 mt-2 font-medium">usually the guide source is stale or the player has cached the wrong data. a full refresh and clock check usually fixes it.</p>
+            </div>
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">why does catch-up only fail on one device?</h3>
+              <p class="text-gray-400 mt-2 font-medium">that points to a local app or cache issue. compare it with a second device before changing the subscription.</p>
+            </div>
+            <div>
+              <h3 class="text-primary font-black uppercase italic tracking-wider">where should i go if i still need help?</h3>
+              <p class="text-gray-400 mt-2 font-medium">send the details to our <a href="/support" class="text-primary underline underline-offset-4 font-bold">support team</a> and mention which player and device you are using.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="mt-20 text-center border-t border-white/10 pt-12">
+          <p class="text-white font-black italic uppercase text-2xl tracking-tighter shadow-primary">
+            if the guide still looks off, contact support and we will help you bring the schedule back into sync.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/support" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-black font-black uppercase tracking-widest text-sm">talk to support</a>
+            <a href="/pricing" class="inline-flex items-center justify-center rounded-full border border-white/15 px-8 py-4 text-white font-black uppercase tracking-widest text-sm">compare plans</a>
+          </div>
+        </footer>
+      </div>
+    `
+  },
+  {
     id: "ultimate-iptv-setup-guide-2026",
     title: "the ultimate 20k-word guide to flash 4k iptv setup in 2026",
     category: "MASTERCLASS",
@@ -1229,4 +1431,3 @@ export const blogPosts = [
     `
   },
 ];
-

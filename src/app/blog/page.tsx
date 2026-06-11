@@ -54,7 +54,7 @@ export default function BlogPage() {
                 <div className="aspect-[16/9] relative overflow-hidden">
                   <img 
                     src={post.image} 
-                    alt={post.title} 
+                    alt={post.imageAlt ?? post.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121121] via-transparent to-transparent opacity-60" />

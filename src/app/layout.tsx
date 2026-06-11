@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.flash4kiptv.vip'), // هادي ضرورية فـ Next.js باش يخدمو الروابط صحاح
@@ -64,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased bg-background`}>
+      <body className="antialiased bg-background font-sans">
         {children}
       </body>
     </html>
