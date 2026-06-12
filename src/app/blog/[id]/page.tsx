@@ -1,35 +1,30 @@
-import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Calendar, User, ArrowLeft } from "lucide-react";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/lib/posts";
+// جرب هاد الـ Import النسبي (Relative) باش نتهناو من شكوك الـ Path
+import { blogPosts } from "../../../lib/posts"; 
 
-type BlogPostPageProps = {
-  params: {
-    id: string;
-  };
-};
+export const dynamicParams = true;
 
-export function generateMetadata({ params }: BlogPostPageProps): Metadata {
-  const post = blogPosts.find((p) => p.id === params.id);
-
-  if (!post) {
-    return {
-      title: "Post Not Found | Flash 4K IPTV Blog",
-      description: "the requested flash 4k iptv blog post could not be found.",
-    };
-  }
-
-  return {
-    title: post.seoTitle ?? post.title,
-    description: post.metaDescription ?? post.excerpt,
-  };
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    id: post.id,
+  }));
 }
 
-export default function BlogPostDetail({ params }: BlogPostPageProps) {
-  const post = blogPosts.find((p) => p.id === params.id);
+export default async function BlogPostDetail({ params }: { params: any }) {
+  // هادي ضرورية لـ Next.js 15
+  const resolvedParams = await params;
+  const id = resolvedParams.id;
+
+  // هاد السطر غادي يورينا في الـ Terminal واش الداتا كتوصل فعلاً
+  console.log("---------------------------------");
+  console.log("Requested ID:", id);
+  console.log("Total Posts Available:", blogPosts.length);
+  console.log("All IDs:", blogPosts.map(p => p.id));
+  console.log("---------------------------------");
+
+  const post = blogPosts.find((p) => p.id === id);
 
   if (!post) {
     notFound();
@@ -39,28 +34,10 @@ export default function BlogPostDetail({ params }: BlogPostPageProps) {
     <main className="bg-[#0b0a15] min-h-screen text-white">
       <Navbar />
       <div className="max-w-4xl mx-auto pt-40 px-6 pb-40">
-        <Link href="/blog" className="text-primary flex items-center gap-2 mb-8 font-black italic uppercase">
-          <ArrowLeft size={20} /> Back to Blog
-        </Link>
-        <h1 className="text-4xl md:text-7xl font-black italic uppercase leading-tight mb-8">
-          {post.title}
-        </h1>
-        <div className="flex gap-6 text-gray-500 text-[10px] font-black mb-10 border-b border-white/5 pb-8 uppercase">
-          <span>
-            <Calendar size={14} className="inline mr-2 text-primary" /> {post.date}
-          </span>
-          <span>
-            <User size={14} className="inline mr-2 text-primary" /> {post.author}
-          </span>
-        </div>
-        <img
-          src={post.image}
-          alt={post.imageAlt ?? post.title}
-          className="w-full h-[500px] object-cover rounded-[3rem] mb-16 shadow-2xl"
-        />
-        <div
-          className="prose prose-invert max-w-none text-gray-300 italic text-lg leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+        <h1 className="text-4xl md:text-7xl font-black italic uppercase mb-8">{post.title}</h1>
+        <div 
+          className="prose prose-invert max-w-none text-gray-300 italic text-lg"
+          dangerouslySetInnerHTML={{ __html: post.content }} 
         />
       </div>
       <Footer />
