@@ -17,6 +17,13 @@ import { ultimateHomeCinemaIptv2026 } from "./posts/ultimate-home-cinema-iptv-20
 import { completeIptvResellerGuide2026 } from "./posts/complete-iptv-reseller-guide-2026";
 import { stopIptvLagNetworkGuide2026 } from "./posts/stop-iptv-lag-network-guide-2026";
 import { worldCup2026UltraHdStreamingGuide } from "./posts/world-cup-2026-ultra-hd-streaming-guide";
+import { bestIptvAppsForSmartTv2026 } from "./posts/best-iptv-apps-for-smart-tv-2026";
+import { iptvVsCableTv2026 } from "./posts/iptv-vs-cable-tv-2026";
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
 
 export interface BlogPost {
   id: string;
@@ -30,6 +37,8 @@ export interface BlogPost {
   imageAlt?: string;
   excerpt: string;
   content: string;
+  faqs?: FaqItem[];
+  lastModified?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -50,4 +59,6 @@ export const blogPosts: BlogPost[] = [
   completeIptvResellerGuide2026,
   stopIptvLagNetworkGuide2026,
   worldCup2026UltraHdStreamingGuide,
+  bestIptvAppsForSmartTv2026,
+  iptvVsCableTv2026,
 ];

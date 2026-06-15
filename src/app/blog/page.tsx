@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Calendar, User, ArrowRight, Search } from "lucide-react";
 import Link from "next/link";
-// استوردنا المعلومات من الملف المركزي
+import Image from "next/image";
 import { blogPosts } from "@/lib/posts"; 
 
 export default function BlogPage() {
@@ -52,10 +52,12 @@ export default function BlogPage() {
                 className="bg-[#121121] rounded-[2rem] overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 group flex flex-col h-full hover:shadow-[0_20px_50px_rgba(234,0,30,0.1)]"
               >
                 <div className="aspect-[16/9] relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={post.image} 
                     alt={post.imageAlt ?? post.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#121121] via-transparent to-transparent opacity-60" />
                   <div className="absolute top-4 left-4 bg-primary text-white text-[9px] font-black px-3 py-1 rounded-md tracking-widest uppercase shadow-lg shadow-primary/20">
