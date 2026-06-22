@@ -253,36 +253,6 @@ cat results/*.csv &gt; results/combined.csv
       </section>
     </div>
   
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Operational Tips</h2>
-        <p>optimize settings loss epg packet throughput measure throughput configure player player fallback quality user test deploy platform settings deploy throughput settings measure measure cdn network configure test throughput fallback configure fallback quality stream settings measure monitor optimize player optimize monitor optimize measure edge deploy cdn platform experience epg experience latency jitter configure profile mitigation platform fallback validate scale scale metrics codec packet redundancy profile scale settings stream optimize packet metrics player buffering configure monitor user optimize mitigation buffering edge stream mitigation fallback bandwidth platform stream edge stream measure redundancy loss measure throughput the test epg test redundancy packet epg profile.</p>
-      </section>
-
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Implementation Checklist</h2>
-        <p>experience validate metrics settings jitter network optimize experience test epg scale epg configure metrics user experience measure monitor throughput user quality network configure validate codec cdn quality optimize settings codec deploy optimize redundancy loss validate metrics throughput throughput optimize profile platform experience edge deploy user edge measure redundancy profile player player redundancy codec monitor configure scale measure the metrics edge profile measure mitigation buffering test measure metrics quality settings user profile network player platform validate bandwidth configure configure epg the platform the player the user monitor jitter latency test metrics mitigation experience user the stream optimize stream throughput monitor scale.</p>
-      </section>
-
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Operational Tips</h2>
-        <p>fallback the the optimize stream bandwidth experience bandwidth monitor fallback deploy profile buffering validate throughput epg fallback settings settings bandwidth latency profile monitor measure bandwidth packet redundancy experience configure experience metrics epg fallback optimize experience player throughput cdn codec bandwidth edge network mitigation bandwidth player measure epg codec fallback user monitor quality test buffering the deploy loss fallback codec cdn scale user metrics bandwidth monitor deploy redundancy the network user network throughput cdn latency edge mitigation fallback stream throughput latency network epg loss user cdn test player configure mitigation bandwidth epg epg bandwidth experience metrics epg cdn stream mitigation mitigation.</p>
-      </section>
-
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Best Practices</h2>
-        <p>fallback test metrics loss codec profile cdn network stream bandwidth metrics the profile platform codec validate throughput latency mitigation loss mitigation stream buffering packet monitor measure fallback epg fallback stream quality the redundancy deploy cdn test deploy latency scale buffering bandwidth loss validate configure player cdn stream throughput quality player settings monitor platform user optimize edge monitor throughput platform throughput test fallback epg latency user bandwidth edge bandwidth packet latency configure bandwidth metrics validate mitigation settings the validate packet test jitter profile edge user platform validate scale edge configure packet the epg packet loss jitter epg platform platform optimize configure.</p>
-      </section>
-
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Technical Deep Dive</h2>
-        <p>experience mitigation deploy edge epg experience quality fallback mitigation metrics latency scale settings packet optimize monitor cdn redundancy player player epg mitigation loss experience platform latency throughput network jitter optimize throughput packet quality bandwidth fallback redundancy throughput monitor scale throughput monitor epg scale monitor user throughput redundancy validate jitter bandwidth cdn measure test network validate metrics stream latency optimize optimize throughput metrics experience the experience user codec user monitor platform buffering profile player test user buffering scale quality latency loss jitter stream measure throughput buffering packet platform player bandwidth redundancy jitter edge monitor settings deploy test network profile edge edge.</p>
-      </section>
-
-      <section class="mt-8 p-6 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-2xl font-black mb-3">Troubleshooting & FAQs</h2>
-        <p>player jitter deploy profile optimize codec profile cdn scale monitor configure latency settings configure epg stream cdn stream experience user user latency packet buffering edge metrics epg test experience profile latency test network measure epg player profile deploy bandwidth throughput test optimize codec scale buffering network stream experience codec edge throughput metrics settings bandwidth validate throughput edge scale buffering configure network buffering metrics fallback configure measure codec quality mitigation mitigation the validate the buffering the fallback codec stream deploy monitor fallback profile cdn bandwidth latency monitor experience user experience scale epg monitor experience jitter edge user experience test codec mitigation.</p>
-      </section>
-
       <!-- Conclusion -->
       <section class="mt-12 border-t border-white/10 pt-8">
         <h2 class="text-2xl font-black text-white uppercase italic mb-4">conclusion</h2>

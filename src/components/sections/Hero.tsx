@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Zap, Tv2, Smartphone, Monitor, Crown, CheckCircle2, Star } from "lucide-react";
 
 const brands = [
-  { name: "Prime Video", logo: "/prime.webp" },
-  { name: "HBO", logo: "/hbo.png" },
-  { name: "Netflix", logo: "/netflix.jpg" }, 
-  { name: "Bein Sports", logo: "/bein.png" },
-  { name: "Disney+", logo: "/disney.svg" },
-  { name: "Apple TV", logo: "/apple.jpeg" },
+  { name: "Prime Video", logo: "/prime.webp", alt: "Prime Video available on flash 4k iptv" },
+  { name: "HBO", logo: "/hbo.png", alt: "HBO streaming via flash 4k iptv subscription" },
+  { name: "Netflix", logo: "/netflix.jpg", alt: "Netflix content on flash 4k iptv" },
+  { name: "Bein Sports", logo: "/bein.png", alt: "Bein Sports live on flash 4k iptv" },
+  { name: "Disney+", logo: "/disney.svg", alt: "Disney Plus included with flash 4k iptv" },
+  { name: "Apple TV", logo: "/apple.jpeg", alt: "Apple TV programming on flash 4k iptv" },
 ];
 
 const scrollingBrands = [...brands, ...brands, ...brands];
@@ -103,7 +103,7 @@ export default function HeroPage() {
           >
             {scrollingBrands.map((b, i) => (
               <div key={i} className="flex-shrink-0 w-28 md:w-40 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                <img src={b.logo} alt={b.name} className="h-6 md:h-10 w-auto object-contain mx-auto" />
+                <img src={b.logo} alt={b.alt} className="h-6 md:h-10 w-auto object-contain mx-auto" />
               </div>
             ))}
           </motion.div>

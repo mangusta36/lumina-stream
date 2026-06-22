@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 const movies = [
-  { id: 1, img: "/movie1..webp" }, // Zdt l-noqta l-khra hit 3ndek smitha movie1..webp
-  { id: 2, img: "/movie2.webp" },
-  { id: 3, img: "/movie3.webp" },
-  { id: 4, img: "/movie4.jpeg" },
-  { id: 5, img: "/movie5.webp" },
-  { id: 6, img: "/movie6.jpeg" }, // Sedina l-guillemet hna
-  { id: 7, img: "/movie7.jpeg" },
-  { id: 8, img: "/movie8.jpeg" },
+  { id: 1, img: "/movie1..webp", alt: "Flash 4K IPTV movie streaming - blockbuster film" },
+  { id: 2, img: "/movie2.webp", alt: "Flash 4K IPTV premium movie library" },
+  { id: 3, img: "/movie3.webp", alt: "Flash 4K IPTV on-demand cinema collection" },
+  { id: 4, img: "/movie4.jpeg", alt: "Flash 4K IPTV 4K Ultra HD movie streaming" },
+  { id: 5, img: "/movie5.webp", alt: "Flash 4K IPTV movie and series streaming service" },
+  { id: 6, img: "/movie6.jpeg", alt: "Flash 4K IPTV Hollywood blockbuster streaming" },
+  { id: 7, img: "/movie7.jpeg", alt: "Flash 4K IPTV action movie streaming in 4K" },
+  { id: 8, img: "/movie8.jpeg", alt: "Flash 4K IPTV premium entertainment library" },
 ];
 
 // كنضوبلو القائمة باش تبان الحركة مالانهائية (Infinite)
@@ -50,7 +50,7 @@ export default function MoviesCarousel() {
             >
               <img 
                 src={movie.img} 
-                alt={`Movie Poster ${movie.id}`} 
+                alt={movie.alt} 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
               />
               {/* طبقة خفيفة فوق الصور باش يبانو "Premium" */}

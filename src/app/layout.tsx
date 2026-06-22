@@ -2,30 +2,33 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.flash4kiptv.vip'), // هادي ضرورية فـ Next.js باش يخدمو الروابط صحاح
+  metadataBase: new URL('https://www.flash4kiptv.vip'),
   title: "Flash 4K IPTV | Premium IPTV Subscription",
   description:
-    "Flash 4K IPTV offers 20,000+ live channels, movies, sports, and ultra-fast 4K streaming with instant activation and 24/7 support.",
+    "flash 4k iptv offers 26,000+ live channels, 100,000+ movies & series, true 4K streaming, anti-freeze technology, instant activation, and 24/7 support. Premium IPTV service.",
 
-  // هادا هو الحل ديال المشكل الأول (Canonical URL)
   alternates: {
     canonical: '/',
   },
 
   keywords: [
-    "Flash 4K IPTV",
-    "IPTV Subscription",
+    "flash 4k iptv",
+    "IPTV subscription",
     "4K IPTV",
-    "Premium IPTV",
-    "Live TV Streaming",
-    "IPTV Service",
-    "Sports IPTV",
-    "Movies IPTV",
+    "premium IPTV",
+    "live TV streaming",
+    "IPTV service",
+    "sports IPTV",
+    "movies IPTV",
+    "IPTV channels",
+    "best IPTV",
+    "IPTV provider",
+    "IPTV streaming",
   ],
 
   openGraph: {
-    title: "Flash 4K IPTV | Premium IPTV Subscription",
-    description: "20,000+ live channels, movies, and sports in Ultra HD 4K quality.",
+    title: "Flash 4K IPTV | Premium IPTV Subscription - 26,000+ Channels",
+    description: "flash 4k iptv delivers 26,000+ live channels, 100,000+ movies & series in true 4K. Anti-freeze servers, instant activation, 24/7 support.",
     url: "https://www.flash4kiptv.vip", 
     siteName: "Flash 4K IPTV",
     images: [
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
         url: "/slides/image1.jpg",
         width: 1200,
         height: 630,
-        alt: "Flash 4K IPTV - Premium Service",
+        alt: "Flash 4K IPTV - Premium IPTV Service with 26,000+ Channels",
       },
     ],
     locale: "en_US",
@@ -42,8 +45,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Flash 4K IPTV | Premium Streaming",
-    description: "Enjoy ultra-fast 4K streaming with 24/7 support.",
+    title: "Flash 4K IPTV | Premium IPTV Streaming",
+    description: "26,000+ live channels, 100,000+ movies & series in true 4K. Anti-freeze technology. Subscribe now.",
     images: ["/slides/image1.jpg"],
   },
 
@@ -54,6 +57,47 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Flash 4K IPTV",
+  "url": "https://www.flash4kiptv.vip",
+  "description": "Premium IPTV streaming service offering 26,000+ live channels, 100,000+ movies and series in 4K quality with anti-freeze technology and 24/7 customer support.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+44-7828-714977",
+    "availableLanguage": ["English", "Arabic", "French", "Spanish"]
+  },
+  "sameAs": []
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Flash 4K IPTV",
+  "url": "https://www.flash4kiptv.vip",
+  "description": "Premium IPTV subscription with 26,000+ live channels, 100,000+ movies and series, true 4K streaming, anti-freeze technology, and 24/7 support.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.flash4kiptv.vip/blog?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.flash4kiptv.vip"
+    }
+  ]
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -62,6 +106,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased bg-background font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {children}
       </body>
     </html>
