@@ -69,7 +69,9 @@ const organizationSchema = {
     "telephone": "+44-7828-714977",
     "availableLanguage": ["English", "Arabic", "French", "Spanish"]
   },
-  "sameAs": []
+    "sameAs": [
+      "https://wa.me/447828714977"
+    ]
 };
 
 const websiteSchema = {
@@ -85,19 +87,6 @@ const websiteSchema = {
   }
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.flash4kiptv.vip"
-    }
-  ]
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -109,10 +98,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <script
           type="application/ld+json"

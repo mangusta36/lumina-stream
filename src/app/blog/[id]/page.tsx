@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { notFound } from "next/navigation";
+import { ChevronRight } from "lucide-react";
 import { blogPosts, type FaqItem } from "../../../lib/posts";
+import { slugifyCategory } from "../../../lib/categories";
 
 const BASE_URL = "https://www.flash4kiptv.vip";
 
@@ -27,21 +30,31 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const publishedTime = toIsoDate(post.date);
   const modifiedTime = toIsoDate(post.lastModified || post.date);
 
+  const title = post.seoTitle || post.title;
+
   return {
-    title: post.seoTitle || post.title,
+    title,
     description: post.metaDescription,
     alternates: {
       canonical: `/blog/${post.id}`,
     },
     openGraph: {
-      title: post.seoTitle || post.title,
+      title,
       description: post.metaDescription,
-      url: `/blog/${post.id}`,
+      url: `${BASE_URL}/blog/${post.id}`,
+      siteName: "Flash 4K IPTV",
       images: [{ url: post.image, alt: post.imageAlt || post.title }],
       type: "article",
       publishedTime,
       modifiedTime,
       authors: [post.author],
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: post.metaDescription,
+      images: [post.image],
     },
   };
 }
@@ -87,16 +100,18 @@ function generateBlogPostingSchema(post: {
   };
 }
 
-function generateBreadcrumbSchema(post: { id: string; title: string; seoTitle?: string }) {
+function generateBreadcrumbSchema(post: { id: string; title: string; seoTitle?: string; category: string }) {
+  const categorySlug = slugifyCategory(post.category);
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: post.category, item: `${BASE_URL}/blog/category/${categorySlug}` },
       {
         "@type": "ListItem",
-        position: 3,
+        position: 4,
         name: post.seoTitle || post.title,
         item: `${BASE_URL}/blog/${post.id}`,
       },
@@ -150,7 +165,30 @@ export default async function BlogPostDetail({ params }: { params: Promise<{ id:
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <article className="max-w-4xl mx-auto pt-40 px-6 pb-40">
+      {/* Visible Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="max-w-4xl mx-auto pt-40 px-6 pb-0">
+        <ol className="flex flex-wrap items-center gap-2 text-[11px] font-bold tracking-widest uppercase text-gray-500">
+          <li>
+            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          </li>
+          <ChevronRight size={12} className="text-gray-600" />
+          <li>
+            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+          </li>
+          <ChevronRight size={12} className="text-gray-600" />
+          <li>
+            <Link href={`/blog/category/${slugifyCategory(post.category)}`} className="hover:text-primary transition-colors">
+              {post.category}
+            </Link>
+          </li>
+          <ChevronRight size={12} className="text-gray-600" />
+          <li className="text-primary truncate max-w-[200px] sm:max-w-[400px]" aria-current="page">
+            {post.seoTitle || post.title}
+          </li>
+        </ol>
+      </nav>
+
+      <article className="max-w-4xl mx-auto px-6 pb-40 mt-12">
         <h1 className="text-4xl md:text-7xl font-black italic uppercase mb-8">{post.title}</h1>
         <div
           className="prose prose-invert max-w-none text-gray-300 italic text-lg"

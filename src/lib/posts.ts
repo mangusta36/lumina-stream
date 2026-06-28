@@ -19,6 +19,8 @@ import { stopIptvLagNetworkGuide2026 } from "./posts/stop-iptv-lag-network-guide
 import { worldCup2026UltraHdStreamingGuide } from "./posts/world-cup-2026-ultra-hd-streaming-guide";
 import { bestIptvAppsForSmartTv2026 } from "./posts/best-iptv-apps-for-smart-tv-2026";
 import { iptvVsCableTv2026 } from "./posts/iptv-vs-cable-tv-2026";
+import { whatIsIptv2026BeginnersGuide } from "./posts/what-is-iptv-2026-beginners-guide";
+import { howToWatchIptvOnFirestick2026Setup } from "./posts/how-to-watch-iptv-on-firestick-2026-setup";
 
 export interface FaqItem {
   question: string;
@@ -41,7 +43,11 @@ export interface BlogPost {
   lastModified?: string;
 }
 
-export const blogPosts: BlogPost[] = [
+function sortByDate(posts: BlogPost[]): BlogPost[] {
+  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export const blogPosts: BlogPost[] = sortByDate([
   organizeIptvChannelList2026,
   fixEpgCatchupIptv2026,
   ultimateIptvSetupGuide2026,
@@ -61,4 +67,6 @@ export const blogPosts: BlogPost[] = [
   worldCup2026UltraHdStreamingGuide,
   bestIptvAppsForSmartTv2026,
   iptvVsCableTv2026,
-];
+  whatIsIptv2026BeginnersGuide,
+  howToWatchIptvOnFirestick2026Setup,
+]);

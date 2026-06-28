@@ -43,7 +43,7 @@ export default function FeaturesPage() {
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
               <MonitorPlay size={32} className="text-primary" />
             </div>
-            <h3 className="text-4xl lg:text-5xl font-black mb-6 tracking-tight italic lowercase">pure 4k <br /> experience.</h3>
+            <h2 className="text-4xl lg:text-5xl font-black mb-6 tracking-tight italic lowercase">pure 4k <br /> experience.</h2>
             <p className="text-gray-500 max-w-sm text-lg leading-relaxed group-hover:text-gray-300 transition-colors italic lowercase">
               experience depth like never before. <span className="text-primary">flash 4k iptv</span> delivers 60 fps streaming with hdr10 support on all major networks.
             </p>
@@ -57,7 +57,7 @@ export default function FeaturesPage() {
             <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10">
               <Cpu size={32} className="text-primary" />
             </div>
-            <h3 className="text-4xl font-black mb-6 tracking-tight italic lowercase">zero-lag <br /> node 5.0.</h3>
+            <h2 className="text-4xl font-black mb-6 tracking-tight italic lowercase">zero-lag <br /> node 5.0.</h2>
             <p className="text-gray-500 text-lg leading-relaxed group-hover:text-gray-300 transition-colors italic lowercase">
               proprietary buffering technology by <span className="text-primary">flash 4k iptv</span> that predicts network drops before they happen.
             </p>
@@ -74,7 +74,7 @@ export default function FeaturesPage() {
             <Globe className="text-primary" size={24} />
             <span className="text-sm font-bold tracking-widest text-gray-500 lowercase italic">content</span>
           </div>
-          <h4 className="text-2xl font-black mb-3 italic lowercase">20,000+ channels</h4>
+          <h3 className="text-2xl font-black mb-3 italic lowercase">20,000+ channels</h3>
           <p className="text-gray-500 text-sm leading-relaxed lowercase italic">daily updated library of global channels, movies, and series with <span className="text-white">flash 4k iptv</span>.</p>
         </div>
 
@@ -84,7 +84,7 @@ export default function FeaturesPage() {
             <Smartphone className="text-primary" size={24} />
             <span className="text-sm font-bold tracking-widest text-gray-500 lowercase italic">compatibility</span>
           </div>
-          <h4 className="text-2xl font-black mb-3 italic lowercase">any device</h4>
+          <h3 className="text-2xl font-black mb-3 italic lowercase">any device</h3>
           <p className="text-gray-500 text-sm leading-relaxed lowercase italic">native support for smart tvs, firestick, and all mobile os with <span className="text-white">flash 4k iptv</span>.</p>
         </div>
 
@@ -94,7 +94,7 @@ export default function FeaturesPage() {
             <CheckCircle2 className="text-primary" size={24} />
             <span className="text-sm font-bold tracking-widest text-gray-500 lowercase italic">reliability</span>
           </div>
-          <h4 className="text-2xl font-black mb-3 italic lowercase">99.9% uptime</h4>
+          <h3 className="text-2xl font-black mb-3 italic lowercase">99.9% uptime</h3>
           <p className="text-gray-500 text-sm leading-relaxed lowercase italic">our <span className="text-white">flash 4k iptv</span> servers are monitored 24/7 with automatic failover protection.</p>
         </div>
       </div>

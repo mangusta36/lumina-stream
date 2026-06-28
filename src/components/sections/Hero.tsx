@@ -41,7 +41,7 @@ const WHATSAPP_LINK = "https://wa.me/447828714977?text=Hello! I want to try the 
 
 export default function HeroPage() {
   return (
-    <main className="bg-[#02040a] text-white selection:bg-cyan-500/30 overflow-x-hidden font-sans">
+    <section className="bg-[#02040a] text-white selection:bg-cyan-500/30 overflow-x-hidden font-sans">
       
       {/* ────── DYNAMIC BACKGROUND ────── */}
       <div className="fixed inset-0 z-0">
@@ -185,6 +185,6 @@ export default function HeroPage() {
         </div>
       </section>
 
-    </main>
+    </section>
   );
 }

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Flash 4K IPTV Blog | IPTV Guides, Tutorials & Insights 2026",
     description:
       "Expert IPTV guides, setup tutorials, device optimization tips, and streaming insights from flash 4k iptv.",
-    url: "/blog",
+    url: `${BASE_URL}/blog`,
     siteName: "Flash 4K IPTV",
     images: [
       {

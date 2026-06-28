@@ -93,7 +93,7 @@ export default function PricingPage() {
                 </span>
 
                 {/* Plan Name */}
-                <h3 className="text-2xl font-black mb-8 tracking-tight lowercase italic">{plan.name}</h3>
+                <h2 className="text-2xl font-black mb-8 tracking-tight lowercase italic">{plan.name}</h2>
 
                 {/* Pricing Area */}
                 <div className="mb-10">
