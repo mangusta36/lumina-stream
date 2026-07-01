@@ -268,6 +268,8 @@ cat results/*.csv &gt; results/combined.csv
           <li><a href="/blog/stop-iptv-lag-network-guide-2026" class="text-primary underline">Stop IPTV Lag Network Guide 2026</a> — troubleshoot network lag for smooth streaming.</li>
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV Optimization Guide</a> — optimize your TV for IPTV playback.</li>
           <li><a href="/blog/best-iptv-apps-for-smart-tv-2026" class="text-primary underline">Best IPTV Apps for Smart TV 2026</a> — top IPTV apps tested on every platform.</li>
+          <li><a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline">IPTV Recording & DVR Guide 2026</a> — record live TV with TiviMate and top players.</li>
+          <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for Sports Fans 2026</a> — multi-view and game-day setup for sports enthusiasts.</li>
         </ul>
       </section>
 

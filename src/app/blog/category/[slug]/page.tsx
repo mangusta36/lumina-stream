@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { getCategoryDisplayInfo } from "@/lib/categories";
+import { estimateReadingTime } from "@/lib/posts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -126,7 +127,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                     {post.excerpt}
                   </p>
                   <div className="mt-auto flex items-center justify-between">
-                    <span className="text-[10px] font-black text-gray-500 tracking-tighter uppercase">Est. Read: 45 min</span>
+                    <span className="text-[10px] font-black text-gray-500 tracking-tighter uppercase">Est. Read: {estimateReadingTime(post.content)}</span>
                     <div className="p-3 rounded-full bg-white/5 group-hover:bg-primary text-white transition-all duration-300">
                       <ArrowRight size={18} />
                     </div>

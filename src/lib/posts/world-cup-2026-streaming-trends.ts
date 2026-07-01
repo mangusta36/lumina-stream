@@ -181,6 +181,7 @@ export const worldCup2026StreamingTrends = {
           <li><a href="/blog/future-of-iptv-2026-2030" class="text-primary underline">Future of IPTV 2026-2030</a> — see how sports streaming is evolving.</li>
           <li><a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline">Ultimate Home Cinema IPTV 2026</a> — cinema setup for the big game.</li>
           <li><a href="/blog/top-10-android-boxes-2026" class="text-primary underline">Top 10 Android Boxes 2026</a> — hardware powerful enough for 4K sports.</li>
+          <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for Sports Fans 2026</a> — complete sports fan guide with multi-screen setup.</li>
         </ul>
       </section>
 

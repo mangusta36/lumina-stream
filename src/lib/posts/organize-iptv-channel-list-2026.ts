@@ -261,6 +261,7 @@ export const organizeIptvChannelList2026 = {
           <li><a href="/blog/expat-guide-streaming-abroad-2026" class="text-primary underline">Expat guide streaming abroad 2026</a> — stream abroad.</li>
           <li><a href="/blog/fix-epg-catchup-iptv-2026" class="text-primary underline">Fix EPG and catch-up IPTV 2026</a> — EPG troubleshooting.</li>
           <li><a href="/blog/world-cup-2026-ultra-hd-streaming-guide" class="text-primary underline">World Cup 2026 ultra HD streaming guide</a> — 4K 8K streaming.</li>
+          <li><a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline">IPTV Recording & DVR Guide 2026</a> — record your organized channel lineup with DVR setup.</li>
         </ul>
       </section>
 

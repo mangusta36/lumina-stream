@@ -21,6 +21,8 @@ import { bestIptvAppsForSmartTv2026 } from "./posts/best-iptv-apps-for-smart-tv-
 import { iptvVsCableTv2026 } from "./posts/iptv-vs-cable-tv-2026";
 import { whatIsIptv2026BeginnersGuide } from "./posts/what-is-iptv-2026-beginners-guide";
 import { howToWatchIptvOnFirestick2026Setup } from "./posts/how-to-watch-iptv-on-firestick-2026-setup";
+import { iptvRecordingDvrGuide2026 } from "./posts/iptv-recording-dvr-guide-2026";
+import { iptvSportsFans2026Guide } from "./posts/iptv-sports-fans-2026-guide";
 
 export interface FaqItem {
   question: string;
@@ -41,6 +43,13 @@ export interface BlogPost {
   content: string;
   faqs?: FaqItem[];
   lastModified?: string;
+}
+
+export function estimateReadingTime(content: string): string {
+  const text = content.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+  const words = text.split(" ").length;
+  const minutes = Math.max(1, Math.round(words / 200));
+  return `${minutes} min`;
 }
 
 function sortByDate(posts: BlogPost[]): BlogPost[] {
@@ -69,4 +78,6 @@ export const blogPosts: BlogPost[] = sortByDate([
   iptvVsCableTv2026,
   whatIsIptv2026BeginnersGuide,
   howToWatchIptvOnFirestick2026Setup,
+  iptvRecordingDvrGuide2026,
+  iptvSportsFans2026Guide,
 ]);

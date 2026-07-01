@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { MonitorPlay, ChevronDown } from "lucide-react";
 
 const faqs = [
@@ -102,17 +103,15 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-6 text-gray-400 text-sm font-medium">
-              <a href="#" className="hover:text-purple-500 transition-colors">
+              <Link href="/terms" className="hover:text-purple-500 transition-colors">
                 Terms
-              </a>
-
-              <a href="#" className="hover:text-purple-500 transition-colors">
+              </Link>
+              <Link href="/privacy" className="hover:text-purple-500 transition-colors">
                 Privacy
-              </a>
-
-              <a href="#" className="hover:text-purple-500 transition-colors">
+              </Link>
+              <Link href="/refund" className="hover:text-purple-500 transition-colors">
                 Refund
-              </a>
+              </Link>
             </div>
           </div>
 

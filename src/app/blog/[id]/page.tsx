@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
-import { blogPosts, type FaqItem } from "../../../lib/posts";
+import { blogPosts, type FaqItem, estimateReadingTime } from "../../../lib/posts";
 import { slugifyCategory } from "../../../lib/categories";
 
 const BASE_URL = "https://www.flash4kiptv.vip";
@@ -189,6 +189,13 @@ export default async function BlogPostDetail({ params }: { params: Promise<{ id:
       </nav>
 
       <article className="max-w-4xl mx-auto px-6 pb-40 mt-12">
+        <div className="flex items-center gap-4 text-[10px] text-gray-500 mb-8 font-bold uppercase tracking-widest">
+          <span>{post.date}</span>
+          <span className="w-1 h-1 bg-gray-600 rounded-full" />
+          <span>{post.author}</span>
+          <span className="w-1 h-1 bg-gray-600 rounded-full" />
+          <span>Est. Read: {estimateReadingTime(post.content)}</span>
+        </div>
         <h1 className="text-4xl md:text-7xl font-black italic uppercase mb-8">{post.title}</h1>
         <div
           className="prose prose-invert max-w-none text-gray-300 italic text-lg"

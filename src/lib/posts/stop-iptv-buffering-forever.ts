@@ -182,6 +182,7 @@ export const stopIptvBufferingForever = {
           <li><a href="/blog/ultimate-iptv-setup-guide-2026" class="text-primary underline">Ultimate IPTV Setup Guide 2026</a> — complete performance setup.</li>
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV Optimization Guide</a> — TV-side optimizations to reduce buffering.</li>
           <li><a href="/blog/multi-device-iptv-setup-2026" class="text-primary underline">Multi-Device IPTV Setup 2026</a> — consistent performance across all devices.</li>
+          <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for Sports Fans 2026</a> — zero-buffering sports streaming setup.</li>
         </ul>
       </section>
 

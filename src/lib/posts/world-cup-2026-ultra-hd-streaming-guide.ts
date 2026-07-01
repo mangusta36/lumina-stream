@@ -200,6 +200,7 @@ export const worldCup2026UltraHdStreamingGuide = {
           <li><a href="/blog/stop-iptv-buffering-forever" class="text-primary underline">Stop IPTV Buffering Forever</a> — ensure uninterrupted 8K streaming.</li>
           <li><a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline">Ultimate Home Cinema IPTV 2026</a> — build a cinema worthy of the World Cup.</li>
           <li><a href="/blog/top-10-android-boxes-2026" class="text-primary underline">Top 10 Android Boxes 2026</a> — hardware capable of decoding 8K HDR.</li>
+          <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for Sports Fans 2026</a> — live sports, PPV events & multi-screen guide.</li>
         </ul>
       </section>
 

@@ -272,6 +272,8 @@ export const multiDeviceIptvSetup2026 = {
           <li><a href="/blog/world-cup-2026-ultra-hd-streaming-guide" class="text-primary underline">World Cup UHD streaming</a> — 4K 8K sports streaming.</li>
           <li><a href="/blog/organize-iptv-channel-list-2026" class="text-primary underline">Channel list organization</a> — organize your channel list.</li>
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV optimization</a> — optimize smart TV performance.</li>
+          <li><a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline">IPTV Recording & DVR Guide 2026</a> — DVR recording across multiple devices.</li>
+          <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for Sports Fans 2026</a> — multi-screen sports setup for the whole family.</li>
         </ul>
       </section>
 

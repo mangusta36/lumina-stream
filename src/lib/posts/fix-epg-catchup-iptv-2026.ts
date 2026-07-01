@@ -368,6 +368,7 @@ export const fixEpgCatchupIptv2026 = {
           <li><a href="/blog/future-of-iptv-2026-2030" class="text-primary underline">Future of IPTV 2026–2030</a> — IPTV technology predictions.</li>
           <li><a href="/blog/iptv-vs-cable-vs-satellite-2026" class="text-primary underline">IPTV vs cable vs satellite 2026</a> — TV comparison.</li>
           <li><a href="/blog/world-cup-2026-streaming-trends" class="text-primary underline">World Cup 2026 streaming trends</a> — World Cup streaming trends.</li>
+          <li><a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline">IPTV Recording & DVR Guide 2026</a> — record live TV and catch-up content on Flash 4K IPTV.</li>
         </ul>
       </section>
 

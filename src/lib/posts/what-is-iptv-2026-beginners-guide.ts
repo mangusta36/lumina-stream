@@ -206,6 +206,9 @@ export const whatIsIptv2026BeginnersGuide = {
         <p class="mt-4">
           For those concerned about internet security while streaming, we have published a comprehensive <a href="/blog/security-vpn-iptv-2026" class="text-primary underline underline-offset-4 font-bold">security and VPN guide for IPTV 2026</a> that explains how to protect your privacy and avoid ISP throttling.
         </p>
+        <p class="mt-4">
+          If you are a sports fan, our dedicated <a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline underline-offset-4 font-bold">IPTV for sports fans 2026 guide</a> covers live matches, PPV events, and multi-screen setups to help you get the most out of your subscription on game day.
+        </p>
       </section>
 
       <footer class="mt-20 text-center border-t border-white/10 pt-12">

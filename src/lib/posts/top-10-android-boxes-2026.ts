@@ -215,6 +215,7 @@ export const top10AndroidBoxes2026 = {
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV Optimization Guide</a> — optimize your display for IPTV.</li>
           <li><a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline">Ultimate Home Cinema IPTV 2026</a> — build a cinema setup around your box.</li>
           <li><a href="/blog/stop-iptv-buffering-forever" class="text-primary underline">Stop IPTV Buffering Forever</a> — performance tuning for your hardware.</li>
+          <li><a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline">IPTV Recording & DVR Guide 2026</a> — DVR recording setup on Android boxes.</li>
         </ul>
       </section>
 

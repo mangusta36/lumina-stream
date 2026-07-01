@@ -1,15 +1,17 @@
 "use client";
 import { useState, useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Calendar, User, ArrowRight, Search, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "@/lib/posts";
+import { blogPosts, estimateReadingTime } from "@/lib/posts";
 import { slugifyCategory } from "@/lib/categories";
 
 export default function BlogPage() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPosts = useMemo(() => {
@@ -98,13 +100,15 @@ export default function BlogPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#121121] via-transparent to-transparent opacity-60" />
-                    <Link
-                      href={`/blog/category/${slugifyCategory(post.category)}`}
-                      className="absolute top-4 left-4 bg-primary text-white text-[9px] font-black px-3 py-1 rounded-md tracking-widest uppercase shadow-lg shadow-primary/20 hover:bg-secondary transition-colors z-10"
-                      onClick={(e) => e.stopPropagation()}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        router.push(`/blog/category/${slugifyCategory(post.category)}`);
+                      }}
+                      className="absolute top-4 left-4 bg-primary text-white text-[9px] font-black px-3 py-1 rounded-md tracking-widest uppercase shadow-lg shadow-primary/20 hover:bg-secondary transition-colors z-10 cursor-pointer"
                     >
                       {post.category}
-                    </Link>
+                    </button>
                   </div>
 
                   <div className="p-8 flex flex-col flex-grow">
@@ -122,7 +126,7 @@ export default function BlogPage() {
                     </p>
 
                     <div className="mt-auto flex items-center justify-between">
-                       <span className="text-[10px] font-black text-gray-500 tracking-tighter uppercase">Est. Read: 45 min</span>
+                       <span className="text-[10px] font-black text-gray-500 tracking-tighter uppercase">Est. Read: {estimateReadingTime(post.content)}</span>
                        <div className="p-3 rounded-full bg-white/5 group-hover:bg-primary text-white transition-all duration-300">
                         <ArrowRight size={18} />
                       </div>
