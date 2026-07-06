@@ -37,7 +37,7 @@ const PRICING_PLANS = [
   },
 ];
 
-const WHATSAPP_LINK = "https://wa.me/447828714977?text=Hello! I want to try the free trial of Flash 4K IPTV.";
+const WHATSAPP_LINK = "https://wa.me/447460006846?text=Hello! I want to try the free trial of Flash 4K IPTV.";
 
 export default function HeroPage() {
   return (
