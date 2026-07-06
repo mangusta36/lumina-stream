@@ -23,6 +23,8 @@ import { whatIsIptv2026BeginnersGuide } from "./posts/what-is-iptv-2026-beginner
 import { howToWatchIptvOnFirestick2026Setup } from "./posts/how-to-watch-iptv-on-firestick-2026-setup";
 import { iptvRecordingDvrGuide2026 } from "./posts/iptv-recording-dvr-guide-2026";
 import { iptvSportsFans2026Guide } from "./posts/iptv-sports-fans-2026-guide";
+import { iptvOnAppleTv2026SetupGuide } from "./posts/iptv-on-apple-tv-2026-setup-guide";
+import { iptvParentalControlsChildSafetyGuide } from "./posts/iptv-parental-controls-child-safety-guide";
 
 export interface FaqItem {
   question: string;
@@ -80,4 +82,6 @@ export const blogPosts: BlogPost[] = sortByDate([
   howToWatchIptvOnFirestick2026Setup,
   iptvRecordingDvrGuide2026,
   iptvSportsFans2026Guide,
+  iptvOnAppleTv2026SetupGuide,
+  iptvParentalControlsChildSafetyGuide,
 ]);
