@@ -51,7 +51,7 @@ export default function SupportPage() {
           
           {/* WhatsApp Card */}
           <a 
-            href="https://wa.me/447460006846" 
+            href="https://wa.me/212776203783" 
             target="_blank"
             className="group relative p-12 rounded-[3.5rem] bg-surface border border-white/5 hover:border-[#25D366]/50 transition-all duration-500 cursor-pointer"
           >

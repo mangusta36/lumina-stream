@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { MessageCircle, ShieldCheck, Clock, CheckCircle2 } from "lucide-react";
 
 export default function RefundPage() {
-  const WHATSAPP = "https://wa.me/447460006846";
+  const WHATSAPP = "https://wa.me/212776203783";
 
   return (
     <main className="min-h-screen bg-[#020202] text-white overflow-hidden selection:bg-primary selection:text-white">
@@ -73,7 +73,7 @@ export default function RefundPage() {
             <h2 className="text-white text-2xl font-black mb-4 italic lowercase tracking-tight">4. how to request a refund</h2>
             <p className="mb-4">requesting a refund from flash 4k iptv is simple and straightforward. all refund requests must be initiated through our official whatsapp support line. to begin the process:</p>
             <ul className="space-y-3 pl-6 mb-6">
-              <li className="list-disc">open a chat with flash 4k iptv on whatsapp at +44 7460 006846</li>
+              <li className="list-disc">open a chat with flash 4k iptv on whatsapp at +212 776203783</li>
               <li className="list-disc">provide your account or payment details so we can locate your subscription</li>
               <li className="list-disc">describe the technical issue you are experiencing in detail</li>
               <li className="list-disc">allow our team to attempt troubleshooting — if the issue persists, we will process your refund</li>
@@ -120,7 +120,7 @@ export default function RefundPage() {
               className="inline-flex items-center gap-3 bg-primary/10 border border-primary/30 text-primary px-6 py-4 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 font-bold italic lowercase"
             >
               <MessageCircle size={20} />
-              +44 7460 006846 — chat on whatsapp
+              +212 776203783 — chat on whatsapp
             </a>
           </section>
 

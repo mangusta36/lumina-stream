@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export default function FeaturesPage() {
-  const WHATSAPP_URL = "https://wa.me/447460006846";
+  const WHATSAPP_URL = "https://wa.me/212776203783";
 
   return (
     <main className="min-h-screen bg-[#020202] text-white overflow-hidden selection:bg-primary selection:text-white">

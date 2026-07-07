@@ -40,7 +40,7 @@ export default function PricingPage() {
     }
   ];
 
-  const WHATSAPP_NUMBER = "447460006846";
+  const WHATSAPP_NUMBER = "212776203783";
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-primary/30">
