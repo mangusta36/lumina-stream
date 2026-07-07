@@ -17,7 +17,7 @@ export const iptvSportsFans2026Guide = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/975152/pexels-photo-975152.jpeg",
   imageAlt: "A large TV screen showing a live sports match with multiple camera angles and scores overlay",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV for Sports Fans 2026 — Live Sports, PPV & Multi-Screen Guide</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV for Sports Fans 2026 — Live Sports, PPV & Multi-Screen Guide</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <!-- Section 1: Introduction -->

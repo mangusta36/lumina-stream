@@ -16,7 +16,7 @@ export const bestIptvPlayers2026 = {
   image: "https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg",
   imageAlt: "A TV screen showing multiple IPTV player interfaces compared side-by-side",
   content: `
-    <h1 class="text-4xl font-extrabold mb-6">Best IPTV Players 2026 — TiviMate, IBO Player & Smarters</h1>
+    <h2 class="text-4xl font-extrabold mb-6">Best IPTV Players 2026 — TiviMate, IBO Player & Smarters</h2>
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>
         <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6 font-bold italic">1. the software revolution: why your app choice matters</h2>

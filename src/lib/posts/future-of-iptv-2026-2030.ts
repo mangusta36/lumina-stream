@@ -15,7 +15,7 @@ export const futureOfIptv20262030 = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
   imageAlt: "Futuristic home entertainment setup with AR and ultra-high resolution displays",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Future of IPTV 2026–2030 — AI, 16K & 6G Predictions</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Future of IPTV 2026–2030 — AI, 16K & 6G Predictions</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

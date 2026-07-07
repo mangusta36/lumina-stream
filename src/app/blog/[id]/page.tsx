@@ -3,9 +3,9 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { notFound } from "next/navigation";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ArrowRight, Calendar, User } from "lucide-react";
 import { blogPosts, type FaqItem, estimateReadingTime } from "../../../lib/posts";
-import { slugifyCategory } from "../../../lib/categories";
+import { slugifyCategory, getPostsByCategory } from "../../../lib/categories";
 
 const BASE_URL = "https://www.flash4kiptv.vip";
 
@@ -202,6 +202,47 @@ export default async function BlogPostDetail({ params }: { params: Promise<{ id:
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>
+      {/* Related Articles */}
+      {post.category && (() => {
+        const related = getPostsByCategory(post.category).filter(p => p.id !== post.id).slice(0, 3);
+        if (related.length === 0) return null;
+        return (
+          <section className="max-w-7xl mx-auto px-6 pb-32">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter text-white">
+                Related <span className="text-primary">Articles</span>
+              </h2>
+              <p className="text-gray-500 text-sm mt-4 italic">
+                More {post.category.toLowerCase()} guides from flash 4k iptv
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {related.map((rp) => (
+                <Link key={rp.id} href={`/blog/${rp.id}`} className="group">
+                  <article className="bg-[#121121] rounded-[2rem] overflow-hidden border border-white/5 hover:border-primary/40 transition-all duration-500 h-full flex flex-col">
+                    <div className="p-8 flex flex-col flex-grow">
+                      <div className="flex items-center gap-4 text-[10px] text-gray-500 mb-4 font-bold uppercase tracking-widest">
+                        <span className="flex items-center gap-1.5"><Calendar size={12} className="text-primary" /> {rp.date}</span>
+                        <span className="flex items-center gap-1.5"><User size={12} className="text-primary" /> {rp.author}</span>
+                      </div>
+                      <h3 className="text-lg font-black mb-3 group-hover:text-primary transition-colors leading-[1.2] italic tracking-tight text-white/90">
+                        {rp.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm mb-6 leading-relaxed line-clamp-3 italic flex-grow">
+                        {rp.excerpt}
+                      </p>
+                      <div className="flex items-center gap-2 text-primary font-bold text-xs tracking-widest uppercase mt-auto">
+                        Read More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
+
       <Footer />
     </main>
   );

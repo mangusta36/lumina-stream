@@ -18,7 +18,7 @@ export const stopIptvLagNetworkGuide2026 = {
     { question: "Should I use my ISP's router or buy my own?", answer: "Always buy your own. ISP-provided routers are designed for the lowest common denominator: they use weak radios, have limited QoS options, and often run outdated firmware with security vulnerabilities. A dedicated router running OpenWrt or Asus Merlin firmware gives you full control over QoS, DNS, firewall rules, and VPN tunnels. For Flash 4K IPTV, we recommend routers with at least a quad-core CPU (1.8 GHz+), 512 MB RAM, and Wi-Fi 7 radios." },
     { question: "How do I test if my ISP is throttling IPTV traffic?", answer: "Run two speed tests: one without a VPN and one with a VPN connected. If your speed is significantly higher with the VPN (for example, 80 Mbps vs. 30 Mbps), your ISP is almost certainly throttling. You can also use the Wehe app (developed by Northeastern University) which specifically tests for traffic differentiation by replaying IPTV-like traffic patterns. If you confirm throttling, the stealth VPN configurations in section 3 will resolve the issue permanently." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Network Guide 2026 — Eliminate IPTV Lag & Buffering</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Network Guide 2026 — Eliminate IPTV Lag & Buffering</h2>
 
     <div class="space-y-12 text-gray-300 italic text-lg leading-relaxed">
       <section>

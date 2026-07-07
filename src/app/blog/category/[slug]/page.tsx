@@ -19,30 +19,31 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const { categoryFromSlug } = await import("@/lib/categories");
+  const { categoryFromSlug, getCategoryDisplayInfo } = await import("@/lib/categories");
   const name = categoryFromSlug(slug);
   if (!name) return {};
+  const info = getCategoryDisplayInfo(slug);
 
   return {
-    title: `${name} — Flash 4K IPTV Blog | IPTV Guides & Tutorials`,
-    description: `Browse all ${name} articles from flash 4k iptv. Expert guides, tutorials, and insights about IPTV streaming in the ${name} category.`,
+    title: `${name} — Flash 4K IPTV Blog | IPTV Guides & Tutorials 2026`,
+    description: info?.description || `Browse all ${name} articles from flash 4k iptv. Expert guides, tutorials, and insights about IPTV streaming in the ${name} category.`,
     alternates: {
       canonical: `/blog/category/${slug}`,
     },
     openGraph: {
-      title: `${name} — Flash 4K IPTV Blog`,
-      description: `Browse all ${name} IPTV articles from flash 4k iptv.`,
+      title: `${name} — Flash 4K IPTV Blog | IPTV Guides 2026`,
+      description: info?.description || `Browse all ${name} IPTV articles from flash 4k iptv.`,
       url: `${BASE_URL}/blog/category/${slug}`,
       siteName: "Flash 4K IPTV",
-      images: [{ url: "/icones.png", width: 512, height: 512, alt: "Flash 4K IPTV" }],
+      images: [{ url: "/slides/image1.jpg", width: 1200, height: 630, alt: `Flash 4K IPTV - ${name} Guides` }],
       locale: "en_US",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${name} — Flash 4K IPTV Blog`,
-      description: `Browse all ${name} IPTV articles from flash 4k iptv.`,
-      images: ["/icones.png"],
+      title: `${name} — Flash 4K IPTV Blog | IPTV Guides 2026`,
+      description: info?.description || `Browse all ${name} IPTV articles from flash 4k iptv.`,
+      images: ["/slides/image1.jpg"],
     },
   };
 }
@@ -84,8 +85,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-8 leading-none">
             {info.name}
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto italic">
-            {info.posts.length} article{info.posts.length !== 1 ? "s" : ""} in the {info.name.toLowerCase()} category from flash 4k iptv.
+          <p className="text-gray-400 text-lg max-w-3xl mx-auto italic leading-relaxed">
+            {info.longDescription}
+          </p>
+          <p className="text-gray-600 text-sm mt-4 italic">
+            {info.posts.length} article{info.posts.length !== 1 ? "s" : ""} in this category.
           </p>
           <Link
             href="/blog"

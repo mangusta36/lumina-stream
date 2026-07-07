@@ -19,7 +19,7 @@ export const fixEpgCatchupIptv2026 = {
     { question: "Why does catch-up only fail on one device?", answer: "That points to a local app or cache issue. Compare it with a second device before changing the subscription. Different devices run varying operating systems and media parsers. For example, a high-end Nvidia Shield TV handles catch-up chunks with ease, while an LG webOS TV has limited cache allocation. Also verify the device's clock is in sync — a clock offset of even 5 minutes will request stream fragments that the server has not archived or has already purged." },
     { question: "Where should I go if I still need help?", answer: "Send the details to our support team and mention which player and device you are using. Include your device model, app name and version, connection type (Wi-Fi or Ethernet), whether you are using a VPN, and screenshots of any error codes." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV EPG Fix Guide 2026 | Flash 4K IPTV Catch-Up TV</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV EPG Fix Guide 2026 | Flash 4K IPTV Catch-Up TV</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

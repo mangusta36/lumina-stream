@@ -15,7 +15,7 @@ export const securityVpnIptv2026 = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg",
   imageAlt: "VPN shield icon overlaid on a streaming TV to represent privacy for IPTV",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">VPN for IPTV 2026 — WireGuard, Privacy & Performance</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">VPN for IPTV 2026 — WireGuard, Privacy & Performance</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

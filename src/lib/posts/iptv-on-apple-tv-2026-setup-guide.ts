@@ -19,7 +19,7 @@ export const iptvOnAppleTv2026SetupGuide = {
   author: "FLASH TEAM",
   image: "/images/blog/apple-tv-iptv-cover.webp",
   imageAlt: "Home entertainment setup with a smart TV displaying streaming apps, a tablet, and a smartphone on a coffee table, representing the Apple TV IPTV streaming experience across multiple devices",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV on Apple TV 2026 — Complete Setup, Best Apps & Optimization Guide</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV on Apple TV 2026 — Complete Setup, Best Apps & Optimization Guide</h2>
 
     <img src="/images/blog/apple-tv-iptv-cover.webp" alt="Home entertainment setup with a smart TV displaying streaming apps, a tablet, and a smartphone on a coffee table, representing the Apple TV IPTV streaming experience across multiple devices" class="w-full rounded-[2rem] shadow-2xl mb-12" loading="eager" />
 
@@ -460,6 +460,7 @@ export const iptvOnAppleTv2026SetupGuide = {
           <li><a href="/blog/stop-iptv-buffering-forever" class="text-primary underline">Stop IPTV Buffering Forever</a> — eliminate buffering and freezing for smooth playback.</li>
           <li><a href="/blog/stop-iptv-lag-network-guide-2026" class="text-primary underline">Network Guide 2026</a> — eliminate lag and optimize your home network for IPTV.</li>
           <li><a href="/blog/multi-device-iptv-setup-2026" class="text-primary underline">Multi-Device IPTV Setup 2026</a> — configure your home for streaming on every screen.</li>
+          <li><a href="/blog/iptv-on-pc-mac-mobile-2026" class="text-primary underline">IPTV on PC, Mac & Mobile 2026</a> — watch Flash 4K IPTV on Windows, macOS, Android, and iOS devices.</li>
           <li><a href="/blog/security-vpn-iptv-2026" class="text-primary underline">Security & VPN Guide</a> — privacy and security best practices for IPTV.</li>
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV Optimization Guide 2026</a> — optimize your smart TV for the best picture quality.</li>
           <li><a href="/blog/what-is-iptv-2026-beginners-guide" class="text-primary underline">What is IPTV? Beginner's Guide</a> — start here if you are new to IPTV streaming.</li>

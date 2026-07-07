@@ -17,7 +17,7 @@ export const ultimateHomeCinemaIptv2026 = {
   image: "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg",
   imageAlt: "A home theater setup with projector, surround sound, and IPTV playback",
   excerpt: "the technical secrets to achieving 1:1 theater quality at home using flash 4k iptv's raw bitstreams and spatial audio...",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Home Cinema Guide 2026 — Projectors, Atmos & Flash 4K IPTV</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Home Cinema Guide 2026 — Projectors, Atmos & Flash 4K IPTV</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

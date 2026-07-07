@@ -20,7 +20,7 @@ export const bestIptvAppsForSmartTv2026 = {
     { question: "Is IBO Player Pro better than SS IPTV for LG TVs?", answer: "SS IPTV is generally better optimized for LG webOS, with superior integration with LG's α-series processors and Dolby Atmos passthrough support. IBO Player Pro on webOS lacks some features available in its Tizen counterpart." },
   ],
   content: `
-    <h1 class="text-4xl font-extrabold mb-6">Best IPTV Apps for Smart TV in 2026 — Tested on Tizen, webOS & Android TV</h1>
+    <h2 class="text-4xl font-extrabold mb-6">Best IPTV Apps for Smart TV in 2026 — Tested on Tizen, webOS & Android TV</h2>
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
 
       <!-- Table of Contents -->

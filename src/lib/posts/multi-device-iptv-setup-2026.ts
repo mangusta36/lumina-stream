@@ -18,7 +18,7 @@ export const multiDeviceIptvSetup2026 = {
     { question: "Can different devices watch different channels simultaneously?", answer: "Absolutely. Each connection operates as a fully independent stream. Device one can watch a French cinema channel in 4K, device two can stream a Premier League match, and device three can play a VOD movie — all at the same time with no interference between them. Each device maintains its own EPG data, its own playback position for VOD content, and its own catch-up TV timeline. There is no 'main' device that controls what others can watch; every connection has equal access to the full channel catalog (unless filtered by parental controls or sub-playlists)." },
     { question: "Do I need a VPN on every device?", answer: "If you use a VPN for privacy, the most efficient approach is to configure it at the router level rather than on each individual device. A router-level VPN encrypts all traffic from every connected device automatically — no per-device apps needed. Most modern routers support OpenVPN or WireGuard protocols natively. WireGuard is preferred for IPTV because its lightweight encryption adds minimal latency (typically under 5 ms overhead), whereas OpenVPN can add 15–30 ms. If your router doesn't support VPN natively, a device like the GL.iNet Flint 2 can sit between your ISP modem and your main router, acting as a dedicated VPN gateway for your entire household." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Multi-Device IPTV Setup 2026 — One Subscription, Every Room</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Multi-Device IPTV Setup 2026 — One Subscription, Every Room</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

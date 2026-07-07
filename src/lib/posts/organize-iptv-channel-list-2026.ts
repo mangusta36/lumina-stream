@@ -24,7 +24,7 @@ export const organizeIptvChannelList2026 = {
     { question: "Will hiding categories reduce buffering or channel zapping time?", answer: "Yes, hiding unused categories can significantly improve zapping speeds and reduce buffering. By narrowing down your active playlist, your player starts up faster, processes connection handshakes quicker, and allocates more cache memory to buffer the active video stream." },
     { question: "What is the difference between group-title and tvg-name in my M3U list?", answer: "These are metadata tags within the M3U file. The group-title tag dictates the folder or category where the channel will be placed. The tvg-name tag represents the formal name used to match the stream to the correct EPG schedule feed. Understanding these tags allows you to manually troubleshoot playlist files or configure custom regex filters inside playlist editing tools." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV Channel List Organization Guide 2026 | Flash 4K IPTV</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV Channel List Organization Guide 2026 | Flash 4K IPTV</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

@@ -18,7 +18,7 @@ export const ultimateIptvSetupGuide2026 = {
     { question: "what should i do if a specific channel is lagging or down?", answer: "If a single channel is buffering while others play perfectly, the issue is typically isolated to that channel's direct feed or routing node. Try changing the video player format from MPEG-TS to HLS, or check for a backup channel link." },
     { question: "can i use my subscription on multiple devices simultaneously?", answer: "Yes, but this depends on your connection package. Standard Flash 4K IPTV plans support one active connection. You can upgrade your plan to allow multiple simultaneous streams." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Ultimate IPTV Setup Guide 2026 — Complete Flash 4K Handbook</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Ultimate IPTV Setup Guide 2026 — Complete Flash 4K Handbook</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>
@@ -292,6 +292,7 @@ export const ultimateIptvSetupGuide2026 = {
           <li><a href="/blog/fix-epg-catchup-iptv-2026" class="text-primary underline">Fix EPG & Catch-Up IPTV 2026</a> — troubleshoot missing EPG data and catch-up issues.</li>
           <li><a href="/blog/iptv-vs-cable-tv-2026" class="text-primary underline">IPTV vs Cable TV 2026</a> — IPTV vs cable TV complete comparison.</li>
           <li><a href="/blog/best-iptv-apps-for-smart-tv-2026" class="text-primary underline">Best IPTV Apps for Smart TV 2026</a> — top IPTV apps tested on every platform.</li>
+          <li><a href="/blog/iptv-on-pc-mac-mobile-2026" class="text-primary underline">IPTV on PC, Mac & Mobile 2026</a> — watch Flash 4K IPTV on desktop and mobile devices.</li>
         </ul>
       </section>
 

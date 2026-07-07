@@ -19,7 +19,7 @@ export const howToWatchIptvOnFirestick2026Setup = {
     { question: "Can I record shows on Firestick with Flash 4K IPTV?", answer: "Yes, TiviMate supports recording directly to USB storage connected to your Firestick via an OTG cable. You can schedule recordings of live TV just like a traditional DVR." },
     { question: "How do I update my Flash 4K IPTV playlist on Firestick?", answer: "Playlist updates are handled automatically by Flash 4K IPTV servers. In most cases you do not need to do anything. If channels are not updating, simply restart your IPTV player app or force-stop it in Firestick settings." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">How to Watch IPTV on Firestick 2026 — Complete Flash 4K Setup</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">How to Watch IPTV on Firestick 2026 — Complete Flash 4K Setup</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
 

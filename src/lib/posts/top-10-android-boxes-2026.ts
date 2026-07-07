@@ -15,7 +15,7 @@ export const top10AndroidBoxes2026 = {
   image: "https://images.pexels.com/photos/4439425/pexels-photo-4439425.jpeg",
   imageAlt: "Array of Android TV boxes and streaming devices on a table",
   excerpt: "detailed hardware analysis for flash 4k iptv. which box runs 8k best in 2026?",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Top Android IPTV Boxes 2026 — Benchmarks & Recommendations</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Top Android IPTV Boxes 2026 — Benchmarks & Recommendations</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

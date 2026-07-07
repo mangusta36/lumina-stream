@@ -20,7 +20,7 @@ export const iptvVsCableTv2026 = {
     { question: "Can I use my existing cable internet for IPTV?", answer: "Absolutely. Most cord-cutters keep their cable internet plan and drop only the television portion. Many providers offer standalone internet plans cheaper than bundled packages." },
   ],
   content: `
-    <h1 class="text-4xl font-extrabold mb-6">IPTV vs Cable TV: Which Is Better in 2026? Full Comparison</h1>
+    <h2 class="text-4xl font-extrabold mb-6">IPTV vs Cable TV: Which Is Better in 2026? Full Comparison</h2>
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
 
       <!-- Table of Contents -->

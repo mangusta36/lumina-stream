@@ -19,7 +19,7 @@ export const whatIsIptv2026BeginnersGuide = {
     { question: "What channels come with Flash 4K IPTV?", answer: "Flash 4K IPTV offers over 26,000 live channels spanning every category including sports, news, entertainment, movies, documentaries, kids programming, and international content from over 60 countries." },
     { question: "How do I pay for Flash 4K IPTV?", answer: "Flash 4K IPTV accepts payments via WhatsApp-based ordering. Our team guides you through the secure payment process and activates your subscription within minutes of confirmation." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">What Is IPTV? 2026 Beginner's Guide to Flash 4K IPTV</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">What Is IPTV? 2026 Beginner's Guide to Flash 4K IPTV</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
 
@@ -164,8 +164,8 @@ export const whatIsIptv2026BeginnersGuide = {
           <li><strong>Smart TVs</strong> — Samsung, LG, Sony, and Android TV models running Tizen, webOS, or Google TV.</li>
           <li><strong>Amazon Firestick and Fire TV</strong> — all models including 4K Max and latest generation. See our <a href="/blog/how-to-watch-iptv-on-firestick-2026-setup" class="text-primary underline underline-offset-4 font-bold">Firestick setup guide</a>.</li>
           <li><strong>Android TV Boxes</strong> — Nvidia Shield, Xiaomi Mi Box, Formuler, and all Android-based boxes.</li>
-          <li><strong>Smartphones and Tablets</strong> — both Android and iOS devices with any IPTV player app.</li>
-          <li><strong>PCs and Laptops</strong> — Windows, macOS, and Linux via VLC Media Player or dedicated IPTV apps.</li>
+          <li><strong>Smartphones and Tablets</strong> — both Android and iOS devices with any IPTV player app. See our <a href="/blog/iptv-on-pc-mac-mobile-2026" class="text-primary underline underline-offset-4 font-bold">PC, Mac, and mobile setup guide</a>.</li>
+          <li><strong>PCs and Laptops</strong> — Windows, macOS, and Linux via VLC Media Player or dedicated IPTV apps. See our <a href="/blog/iptv-on-pc-mac-mobile-2026" class="text-primary underline underline-offset-4 font-bold">PC, Mac, and mobile setup guide</a>.</li>
           <li><strong>MAG Boxes and Enigma2</strong> — traditional IPTV STB devices are fully supported.</li>
         </ul>
         <p>

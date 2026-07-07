@@ -17,7 +17,7 @@ export const iptvRecordingDvrGuide2026 = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/3945658/pexels-photo-3945658.jpeg",
   imageAlt: "A remote control and streaming device interface showing recording and DVR controls for IPTV",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV Recording Guide 2026 — DVR, Cloud Recording & Catch-Up Setup</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV Recording Guide 2026 — DVR, Cloud Recording & Catch-Up Setup</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <!-- Section 1: Introduction -->

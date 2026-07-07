@@ -15,7 +15,7 @@ export const stopIptvBufferingForever = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/4240505/pexels-photo-4240505.jpeg",
   imageAlt: "A frozen TV screen with buffering icon and network diagnostics overlay",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Stop IPTV Buffering Forever — 2026 Network & App Fixes</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Stop IPTV Buffering Forever — 2026 Network & App Fixes</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

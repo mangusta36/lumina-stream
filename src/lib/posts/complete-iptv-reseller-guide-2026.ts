@@ -18,7 +18,7 @@ export const completeIptvResellerGuide2026 = {
     { question: "What happens if a customer wants a refund?", answer: "Refund policies are entirely up to you — you're running your own business. However, we recommend offering a 24-hour trial before any paid subscription. This eliminates almost all refund requests because the customer has already verified that the service works on their device and meets their expectations. If a technical issue on our end causes extended downtime (which is extremely rare), we provide credit compensation to affected resellers to pass along to their customers." },
     { question: "How do I handle renewals and retain customers long-term?", answer: "Customer retention is where the real profit lies. Set up a simple reminder system — a spreadsheet or CRM tool — that alerts you 3 days before each customer's subscription expires. Send them a friendly renewal message with a small loyalty discount (e.g., 10% off for renewing a full year). Resellers who proactively manage renewals see retention rates above 80%, compared to under 50% for those who wait for customers to reach out. Consistent, high-quality service and responsive support are the two factors that matter most for long-term retention." },
   ],
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV Reseller Guide 2026 — Start & Scale with Flash 4K</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV Reseller Guide 2026 — Start & Scale with Flash 4K</h2>
 
     <div class="space-y-12 text-gray-300 italic text-lg leading-relaxed">
       <section>

@@ -15,7 +15,7 @@ export const smartTvOptimizationGuide = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/6976094/pexels-photo-6976094.jpeg",
   imageAlt: "Smart TV closeup showing settings menu for optimization",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">Smart TV Optimization Guide 2026 — Tizen & webOS Tweaks</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">Smart TV Optimization Guide 2026 — Tizen & webOS Tweaks</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <section>

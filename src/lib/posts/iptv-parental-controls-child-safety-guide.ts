@@ -19,7 +19,7 @@ export const iptvParentalControlsChildSafetyGuide = {
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg",
   imageAlt: "A family with children watching television together in a cozy living room, with a remote control on the coffee table",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">IPTV Parental Controls & Child Safety 2026 — Complete Family Guide</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV Parental Controls & Child Safety 2026 — Complete Family Guide</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
       <!-- Section 1: Introduction -->

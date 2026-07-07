@@ -15,7 +15,7 @@ export const worldCup2026UltraHdStreamingGuide = {
     { question: "What if my ISP blocks the stream?", answer: "Flash 4K IPTV uses port-hopping and SRT encryption, making it extremely difficult for ISPs to identify and throttle your football stream. If blocking occurs, route the traffic through a WireGuard VPN server." },
   ],
   excerpt: "the definitive guide to watching the 2026 world cup. learn how our srt-protocol and dedicated sports nodes eliminate the 30-second delay...",
-  content: `    <h1 class="text-4xl font-extrabold mb-6">World Cup 2026 IPTV Guide | Zero-Latency 8K Streaming | Flash 4K IPTV</h1>
+  content: `    <h2 class="text-4xl font-extrabold mb-6">World Cup 2026 IPTV Guide | Zero-Latency 8K Streaming | Flash 4K IPTV</h2>
 
     <div class="space-y-12 text-gray-300 italic text-lg leading-relaxed">
       <!-- 1. Intro Section -->
