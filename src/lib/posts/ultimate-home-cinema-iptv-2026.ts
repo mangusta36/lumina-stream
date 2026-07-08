@@ -167,24 +167,6 @@ export const ultimateHomeCinemaIptv2026 = {
         </p>
       </section>
 
-      <section class="mt-12 p-10 bg-white/5 rounded-2xl border border-white/5">
-        <h2 class="text-3xl font-black mb-6">network optimization for 4K home cinema streaming</h2>
-        <p>
-          Even with perfect hardware calibration, your home cinema experience is only as good as your network. Flash 4K IPTV's high-bitrate streams demand a stable, low-jitter connection to maintain cinematic playback without interruption. Wired Ethernet is strongly preferred over Wi-Fi for any fixed installation, as it eliminates radio interference, signal dropouts, and channel congestion that can cause micro-stutters during critical scenes.
-        </p>
-        <p class="mt-4">
-          If running Ethernet is not possible, invest in a Wi-Fi 6 or Wi-Fi 6E mesh system with a dedicated backhaul channel. Position your streaming box or access point within the same room as your home theater to minimize wall attenuation. Configure Quality of Service (QoS) on your router to prioritize traffic from your IPTV device, ensuring that background downloads, smart home polling, or family member browsing does not steal bandwidth from your 4K stream.
-        </p>
-        <div class="bg-black/40 p-8 rounded-3xl mt-8 border border-white/5 italic">
-          <h4 class="text-white font-black uppercase mb-4 underline decoration-primary">network readiness checklist:</h4>
-          <ul class="space-y-2 text-sm text-gray-400 font-bold">
-            <li>- wired gigabit Ethernet from router to streaming box (or Wi-Fi 6 with less than 5ms jitter).</li>
-            <li>- router QoS rules that reserve 50 Mbps minimum for your IPTV device.</li>
-            <li>- disable any VPN on the router if it adds more than 10ms latency.</li>
-            <li>- verify your internet plan delivers at least 100 Mbps sustained, not just burst speed.</li>
-          </ul>
-        </div>
-      </section>
 
       <section class="mt-12 p-10 bg-white/5 rounded-2xl border border-white/5">
         <h2 class="text-3xl font-black mb-6">pro calibration: test patterns and reference tools</h2>

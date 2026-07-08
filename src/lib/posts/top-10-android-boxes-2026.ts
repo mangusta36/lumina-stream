@@ -48,21 +48,11 @@ export const top10AndroidBoxes2026 = {
             </ul>
           </div>
 
+
+
           <!-- Device 2 -->
           <div class="border-b border-white/5 pb-10 italic">
-            <h3 class="text-2xl font-black text-white uppercase italic mb-4 italic underline decoration-primary italic">#2. flash-box ultra pro (custom hardware)</h3>
-            <p>specifically engineered for our service, the flash-box ultra pro is pre-loaded with system-level optimizations for <strong>flash 4k iptv</strong>. it features a "direct-path" network card that reduces internal latency by 25%. it is the most reliable "plug-and-play" option for 2026.</p>
-            <p class="text-xs text-gray-400 mt-2">Equipped with a custom Linux-based operating system built purely for media playback. By stripping out Google advertising frameworks and background update engines, the device keeps its memory pool completely clear, dedicating 100% of its power to drawing raw streams.</p>
-            <ul class="mt-4 text-sm text-gray-400 space-y-1 italic font-bold">
-              <li>- optimized for flash 4k iptv native app</li>
-              <li>- built-in hardware vpn acceleration</li>
-              <li>- bench score for flash 4k iptv: 97/100</li>
-            </ul>
-          </div>
-
-          <!-- Device 3 -->
-          <div class="border-b border-white/5 pb-10 italic">
-            <h3 class="text-2xl font-black text-white uppercase italic mb-4 italic underline decoration-primary italic">#3. apple tv 4k (gen 5)</h3>
+            <h3 class="text-2xl font-black text-white uppercase italic mb-4 italic underline decoration-primary italic">#2. apple tv 4k (gen 5)</h3>
             <p>for those who want simplicity and speed. the a18 chip inside the gen 5 apple tv handles <strong>flash 4k iptv</strong> streams with extreme efficiency. while the ecosystem is closed, the stability of the apps on this platform is unmatched for long-term streaming sessions.</p>
             <p class="text-xs text-gray-400 mt-2">The Apple tvOS operating system uses custom memory-mapping mechanics that prevent applications from leaking RAM over extended streaming periods. This makes it an ideal unit for sports bars or living rooms where the TV remains turned on for 12+ hours a day.</p>
           </div>
@@ -76,7 +66,7 @@ export const top10AndroidBoxes2026 = {
           in 2026, the <strong>av1 codec</strong> is the hero of the story. it allows <strong>flash 4k iptv</strong> to deliver 4k resolution at 30% lower bitrates without losing any detail. when choosing a box, you must ensure it has <strong>hardware-level av1 decoding</strong>. 
         </p>
         <p class="mt-4">
-          software decoding (using the cpu) will make your device run hot and eventually cause the <strong>flash 4k iptv</strong> app to crash or stutter. all top 5 devices in our list have dedicated av1 chips, ensuring your device stays cool and your stream stays fluid.
+          software decoding (using the cpu) will make your device run hot and eventually cause the <strong>flash 4k iptv</strong> app to crash or stutter. all premium devices in our list have dedicated av1 chips, ensuring your device stays cool and your stream stays fluid.
         </p>
         <p class="mt-4">
           AV1 is an open-source, royalty-free video coding format. It is significantly more efficient than standard H.264 or H.265. By utilizing advanced compression algorithms, AV1 reduces blockiness in fast-moving sports sequences. If your streaming box does not have hardware-level support for AV1, it falls back to raw CPU rendering, causing frame drops during critical matches.
@@ -103,12 +93,7 @@ export const top10AndroidBoxes2026 = {
                 <td class="p-6 border-b border-white/5 italic text-primary font-bold">0.5s</td>
                 <td class="p-6 border-b border-white/5 italic">99%</td>
               </tr>
-              <tr>
-                <td class="p-6 border-b border-white/5 italic">flash-box ultra pro</td>
-                <td class="p-6 border-b border-white/5 italic text-primary font-bold">1.5s</td>
-                <td class="p-6 border-b border-white/5 italic text-primary font-bold">0.6s</td>
-                <td class="p-6 border-b border-white/5 italic">98%</td>
-              </tr>
+
               <tr>
                 <td class="p-6 border-b border-white/5 italic">firestick 8k max</td>
                 <td class="p-6 border-b border-white/5 italic text-primary font-bold">2.8s</td>

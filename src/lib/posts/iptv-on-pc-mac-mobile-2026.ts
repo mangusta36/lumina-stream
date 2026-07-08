@@ -258,32 +258,16 @@ export const iptvOnPcMacMobile2026 = {
 
       <section id="best-players" class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
         <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">6. best cross-platform players compared</h2>
-        <p class="mb-6">the table below summarizes the best <strong>flash 4k iptv</strong> player apps for each platform, helping you choose the right app for your needs.</p>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-sm text-gray-300 border-collapse">
-            <thead>
-              <tr class="border-b border-white/20">
-                <th class="py-3 px-4 font-bold uppercase text-white">app</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">platform</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">price</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">xtream codes</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">epg</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">recording</th>
-                <th class="py-3 px-4 font-bold uppercase text-white">catch-up</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-white/5">
-              <tr><td class="py-3 px-4 font-bold">VLC</td><td class="py-3 px-4">Win, Mac, Android, iOS</td><td class="py-3 px-4">Free</td><td class="py-3 px-4">No (M3U only)</td><td class="py-3 px-4">Manual</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Manual</td></tr>
-              <tr><td class="py-3 px-4 font-bold">IPTV Smarters Pro</td><td class="py-3 px-4">Win, Mac, Android, iOS</td><td class="py-3 px-4">Free</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">GSE Smart IPTV</td><td class="py-3 px-4">Mac, iOS, Android</td><td class="py-3 px-4">Paid</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">No</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">OTT Navigator</td><td class="py-3 px-4">Android</td><td class="py-3 px-4">Free / Paid</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">TiviMate</td><td class="py-3 px-4">Android</td><td class="py-3 px-4">Paid</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">No</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">MyIPTV Player</td><td class="py-3 px-4">Windows</td><td class="py-3 px-4">Paid</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">iPlayTV</td><td class="py-3 px-4">iOS</td><td class="py-3 px-4">Paid</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">No</td><td class="py-3 px-4">Yes</td></tr>
-              <tr><td class="py-3 px-4 font-bold">PotPlayer</td><td class="py-3 px-4">Windows</td><td class="py-3 px-4">Free</td><td class="py-3 px-4">No (M3U only)</td><td class="py-3 px-4">Manual</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">No</td></tr>
-              <tr><td class="py-3 px-4 font-bold">Televiso</td><td class="py-3 px-4">Android</td><td class="py-3 px-4">Free</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">Yes</td><td class="py-3 px-4">No</td><td class="py-3 px-4">Yes</td></tr>
-            </tbody>
-          </table>
+        <p class="mb-6">the apps you choose on desktop and mobile mirror many of the same players available on smart tvs and streaming boxes. here is a quick summary of the most popular cross-platform options — for the full comparison including benchmark data, pros and cons, and platform-specific recommendations, see our dedicated <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">definitive IPTV player guide 2026</a>.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">VLC</strong> — free universal player, M3U only, great for manual setup on all platforms.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">IPTV Smarters Pro</strong> — free, xtream codes, runs on virtually every device with a consistent interface.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">GSE Smart IPTV</strong> — paid, best for macOS and iOS with broad codec support and AirPlay.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">OTT Navigator</strong> — lightweight android player with low battery drain and ExoPlayer integration.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">TiviMate</strong> — premium android player, fastest EPG, up to 9 multi-view streams, sideload on Fire TV.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">MyIPTV Player</strong> — native Windows app with recording scheduler and excellent EPG caching.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">iPlayTV</strong> — polished iOS player with gesture controls and background audio playback.</div>
+          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">PotPlayer</strong> — ultra-lightweight Windows alternative to VLC, ideal for older PCs.</div>
         </div>
       </section>
 
@@ -392,7 +376,7 @@ export const iptvOnPcMacMobile2026 = {
           you are now equipped to watch <strong>flash 4k iptv</strong> on every device you own. whether you are on a Windows PC at work, a MacBook at a coffee shop, an android phone on your commute, or an iPhone at home, your full subscription travels with you. start with the app that fits your primary device, then expand to others as you explore the multi-platform flexibility that <strong>flash 4k iptv</strong> offers.
         </p>
         <p class="mt-4">
-          for more detailed guidance on specific topics, explore our <a href="/blog/organize-iptv-channel-list-2026" class="text-primary underline underline-offset-4 font-bold">channel organization guide</a> to organize your PC playlist, our <a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline underline-offset-4 font-bold">DVR recording guide</a> for scheduling recordings across all devices, and our <a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline underline-offset-4 font-bold">home cinema guide</a> for optimizing desktop viewing. if you run into any issues, the <a href="/support" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv support team</a> is available 24/7 to help with any platform-specific configuration.
+          for more detailed guidance on specific topics, explore our <a href="/blog/organize-iptv-channel-list-2026" class="text-primary underline underline-offset-4 font-bold">channel organization guide</a> to organize your PC playlist, our <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">definitive IPTV player guide 2026</a> for a complete comparison of every major player across all platforms, our <a href="/blog/iptv-recording-dvr-guide-2026" class="text-primary underline underline-offset-4 font-bold">DVR recording guide</a> for scheduling recordings across all devices, and our <a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline underline-offset-4 font-bold">home cinema guide</a> for optimizing desktop viewing. if you run into any issues, the <a href="/support" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv support team</a> is available 24/7 to help with any platform-specific configuration.
         </p>
       </div>
     </div>`

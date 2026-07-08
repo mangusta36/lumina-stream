@@ -166,13 +166,10 @@ export const ultimateIptvSetupGuide2026 = {
             <li><strong>Switch to Custom DNS Servers:</strong> Replace your ISP's slow DNS servers. In your WAN settings, input Google DNS (<code class="bg-black/40 px-1 py-0.5 rounded text-white">8.8.8.8</code> and <code class="bg-black/40 px-1 py-0.5 rounded text-white">8.8.4.4</code>) or Cloudflare DNS (<code class="bg-black/40 px-1 py-0.5 rounded text-white">1.1.1.1</code> and <code class="bg-black/40 px-1 py-0.5 rounded text-white">1.0.0.1</code>). This accelerates playlist loading and zapping speeds.</li>
             <li><strong>Enable IGMP Snooping:</strong> Turn on IGMP Snooping in your LAN or IPTV settings. This prevents multicast IP packets from flooding unnecessary ports, protecting your Wi-Fi bandwidth from degradation.</li>
             <li><strong>Configure MTU Size:</strong> Set your Maximum Transmission Unit (MTU) to <code class="bg-black/40 px-1 py-0.5 rounded text-white">1500</code>. If you use a VPN, set the MTU to <code class="bg-black/40 px-1 py-0.5 rounded text-white">1472</code> or <code class="bg-black/40 px-1 py-0.5 rounded text-white">1450</code> to account for VPN packet overhead and prevent fragmentation.</li>
-            <li><strong>Disable IPv6:</strong> Locate your IPv6 settings and toggle the switch to off. Keep your system running on IPv4, as many international IPTV routing tables are optimized for IPv4, preventing sudden connection drops.</li>
+
           </ul>
         </div>
 
-        <div class="bg-primary/10 p-6 rounded-2xl my-6 border-l-4 border-primary shadow-lg">
-          <p class="text-white font-bold">important: always disable ipv6 in your router settings when using <strong>flash 4k iptv</strong>. ipv4 remains the more stable protocol for international streaming nodes in 2026.</p>
-        </div>
       </section>
 
       <section class="border-y border-white/5 py-12 my-12">
@@ -235,21 +232,6 @@ export const ultimateIptvSetupGuide2026 = {
         </div>
       </section>
 
-      <section>
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 underline decoration-primary">5. the world cup 2026 experience</h2>
-        <p>
-          <strong>flash 4k iptv</strong> is the official home for the 2026 world cup. our low-latency srt protocol means you will see the goal 5 seconds before your neighbors using cable or satellite. with dedicated 8k streams, every detail of the tournament in north america will be captured with breathtaking clarity. Unlike traditional television networks that suffer from heavy encoding latency due to complex distribution chains, our direct fiber feeds capture the stadium camera outputs, route them through local processing nodes, and deliver them to your player instantly.
-        </p>
-        <p class="mt-4">
-          Our specialized sport networks run at 60fps (Frames Per Second). This captures the high-speed motion of the football and players with zero blur. Standard 30fps broadcasts can cause tracking fatigue. With Flash 4K IPTV, the motion is smooth and fluid, creating a virtual stadium experience in your own living room. Higher frame rates require double the computing power on your local device, which is why hardware acceleration (like the Tegra or S928X chipsets mentioned earlier) is mandatory for an optimal viewing experience.
-        </p>
-        <p class="mt-4">
-          In addition to frame rates, the 2026 World Cup broadcasts leverage HDR10+ and HLG (Hybrid Log-Gamma) profiles. This delivers a wider color gamut, producing deeper grass greens, brighter stadium lighting, and realistic skin tones. Without an optimized stream, these color profiles can appear washed out. Flash 4K IPTV ensures that the HDR metadata passes natively to your display panel, unlocking the true color capabilities of your TV.
-        </p>
-        <p class="mt-4 italic">
-          to enjoy the world cup without interruptions, we recommend a dedicated line of at least 150mbps. <strong>flash 4k iptv</strong> has invested in over 200 new edge servers across the globe to handle the massive traffic expected during the final matches. These servers are strategically placed close to major internet exchange points (IXPs), reducing the number of hops your data packets must take, resulting in a fast, buffer-free connection.
-        </p>
-      </section>
 
       <section class="bg-white/5 p-10 rounded-[3rem] mt-20 shadow-inner">
         <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2">frequently asked questions (faq)</h2>
