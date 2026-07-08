@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { blogPosts } from "@/lib/posts";
+import { getPublishedBlogPosts } from "@/lib/posts";
 import { Calendar, User, ArrowRight } from "lucide-react";
 
 export default function LatestArticles() {
-  const latest = blogPosts.slice(0, 6);
+  const latest = getPublishedBlogPosts().slice(0, 6);
 
   return (
     <section className="py-24 md:py-32 px-6 relative overflow-hidden bg-black">

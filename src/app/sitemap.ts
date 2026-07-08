@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next'
-import { blogPosts } from '@/lib/posts'
-import { getUniqueCategories, slugifyCategory } from '@/lib/categories'
+import { getPostModifiedDate, getPublishedBlogPosts } from '@/lib/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.flash4kiptv.vip'
@@ -57,19 +56,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  const blogPages = blogPosts.map((post) => ({
+  const blogPages = getPublishedBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.id}`,
-    lastModified: new Date(post.date),
+    lastModified: getPostModifiedDate(post),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
 
-  const categoryPages = getUniqueCategories().map((cat) => ({
-    url: `${baseUrl}/blog/category/${slugifyCategory(cat)}`,
-    lastModified: siteLaunch,
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
-
-  return [...staticPages, ...blogPages, ...categoryPages]
+  return [...staticPages, ...blogPages]
 }

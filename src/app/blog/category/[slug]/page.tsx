@@ -30,6 +30,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `/blog/category/${slug}`,
     },
+    robots: {
+      index: false,
+      follow: true,
+    },
     openGraph: {
       title: `${name} — Flash 4K IPTV Blog | IPTV Guides 2026`,
       description: info?.description || `Browse all ${name} IPTV articles from flash 4k iptv.`,

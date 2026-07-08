@@ -4,7 +4,13 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowRight, Calendar, User } from "lucide-react";
-import { blogPosts, type FaqItem, estimateReadingTime } from "../../../lib/posts";
+import {
+  blogPosts,
+  type FaqItem,
+  estimateReadingTime,
+  getPublishedBlogPosts,
+  isPublishedPost,
+} from "../../../lib/posts";
 import { slugifyCategory, getPostsByCategory } from "../../../lib/categories";
 
 const BASE_URL = "https://www.flash4kiptv.vip";
@@ -12,7 +18,7 @@ const BASE_URL = "https://www.flash4kiptv.vip";
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  return getPublishedBlogPosts().map((post) => ({
     id: post.id,
   }));
 }
@@ -24,7 +30,7 @@ function toIsoDate(dateStr: string): string {
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
-  const post = blogPosts.find((p) => p.id === id);
+  const post = blogPosts.find((p) => p.id === id && isPublishedPost(p));
   if (!post) return {};
 
   const publishedTime = toIsoDate(post.date);
@@ -138,7 +144,7 @@ function generateFaqSchema(faqs?: FaqItem[]) {
 
 export default async function BlogPostDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const post = blogPosts.find((p) => p.id === id);
+  const post = blogPosts.find((p) => p.id === id && isPublishedPost(p));
 
   if (!post) {
     notFound();

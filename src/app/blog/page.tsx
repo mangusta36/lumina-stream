@@ -7,17 +7,45 @@ import Footer from "@/components/layout/Footer";
 import { Calendar, User, ArrowRight, Search, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts, estimateReadingTime } from "@/lib/posts";
+import { estimateReadingTime, getPublishedBlogPosts } from "@/lib/posts";
 import { slugifyCategory } from "@/lib/categories";
+
+const BASE_URL = "https://www.flash4kiptv.vip";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+  ],
+};
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Flash 4K IPTV Blog",
+  description:
+    "Expert IPTV guides, setup tutorials, device optimization tips, and streaming insights from flash 4k iptv.",
+  publisher: {
+    "@type": "Organization",
+    name: "Flash 4K IPTV",
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/icones.png`,
+    },
+  },
+};
 
 export default function BlogPage() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
+  const posts = useMemo(() => getPublishedBlogPosts(), []);
 
   const filteredPosts = useMemo(() => {
-    if (!searchQuery.trim()) return blogPosts;
+    if (!searchQuery.trim()) return posts;
     const q = searchQuery.toLowerCase().trim();
-    return blogPosts.filter(
+    return posts.filter(
       (p) =>
         p.title.toLowerCase().includes(q) ||
         p.excerpt.toLowerCase().includes(q) ||
@@ -25,13 +53,21 @@ export default function BlogPage() {
         p.seoTitle?.toLowerCase().includes(q) ||
         p.author.toLowerCase().includes(q)
     );
-  }, [searchQuery]);
+  }, [posts, searchQuery]);
 
   const clearSearch = useCallback(() => setSearchQuery(""), []);
 
   return (
     <main className="bg-[#0b0a15] min-h-screen text-white font-sans">
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="pt-48 pb-24 px-6 relative overflow-hidden">

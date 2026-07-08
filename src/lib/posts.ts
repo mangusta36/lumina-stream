@@ -26,6 +26,7 @@ import { iptvSportsFans2026Guide } from "./posts/iptv-sports-fans-2026-guide";
 import { iptvOnAppleTv2026SetupGuide } from "./posts/iptv-on-apple-tv-2026-setup-guide";
 import { iptvParentalControlsChildSafetyGuide } from "./posts/iptv-parental-controls-child-safety-guide";
 import { iptvOnPcMacMobile2026 } from "./posts/iptv-on-pc-mac-mobile-2026";
+import { applyPostRewrite } from "./post-rewrites";
 
 export interface FaqItem {
   question: string;
@@ -55,8 +56,24 @@ export function estimateReadingTime(content: string): string {
   return `${minutes} min`;
 }
 
+export function parsePostDate(dateStr: string): Date {
+  return new Date(`${dateStr} UTC`);
+}
+
+export function getPostModifiedDate(post: BlogPost): Date {
+  return parsePostDate(post.lastModified || post.date);
+}
+
+export function isPublishedPost(post: BlogPost, now = new Date()): boolean {
+  return parsePostDate(post.date).getTime() <= now.getTime();
+}
+
+export function getPublishedBlogPosts(now = new Date()): BlogPost[] {
+  return blogPosts.filter((post) => isPublishedPost(post, now));
+}
+
 function sortByDate(posts: BlogPost[]): BlogPost[] {
-  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return [...posts].sort((a, b) => parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
 }
 
 export const blogPosts: BlogPost[] = sortByDate([
@@ -86,4 +103,4 @@ export const blogPosts: BlogPost[] = sortByDate([
   iptvOnAppleTv2026SetupGuide,
   iptvParentalControlsChildSafetyGuide,
   iptvOnPcMacMobile2026,
-]);
+]).map(applyPostRewrite);

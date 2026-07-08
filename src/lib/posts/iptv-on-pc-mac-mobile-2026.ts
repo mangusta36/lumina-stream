@@ -6,7 +6,7 @@ export const iptvOnPcMacMobile2026 = {
   seoTitle: "Watch Flash 4K IPTV on PC, Mac & Mobile 2026 — Complete Setup Guide",
   metaDescription: "Complete 2026 guide to watching Flash 4K IPTV on Windows, macOS, Android, and iOS. Best player apps, Xtream Codes setup, keyboard shortcuts, VPN configuration, and network optimization for every platform.",
   category: "GUIDE",
-  date: "Jul 10, 2026",
+  date: "Jul 8, 2026",
   author: "FLASH TEAM",
   image: "https://images.pexels.com/photos/5077051/pexels-photo-5077051.jpeg",
   imageAlt: "Multiple devices including a laptop, smartphone, and tablet displaying streaming content",

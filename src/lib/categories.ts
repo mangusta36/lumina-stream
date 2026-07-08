@@ -1,4 +1,4 @@
-import { blogPosts, type BlogPost } from "./posts";
+import { getPublishedBlogPosts, type BlogPost } from "./posts";
 
 export interface CategoryInfo {
   slug: string;
@@ -80,7 +80,7 @@ const categoryDescriptions: Record<string, { description: string; longDescriptio
 };
 
 export function getUniqueCategories(): string[] {
-  const cats = new Set(blogPosts.map((p) => p.category));
+  const cats = new Set(getPublishedBlogPosts().map((p) => p.category));
   return Array.from(cats).sort();
 }
 
@@ -94,7 +94,7 @@ export function categoryFromSlug(slug: string): string | null {
 }
 
 export function getPostsByCategory(category: string): BlogPost[] {
-  return blogPosts.filter((p) => p.category === category);
+  return getPublishedBlogPosts().filter((p) => p.category === category);
 }
 
 export function getCategoryDisplayInfo(slug: string): CategoryInfo | null {

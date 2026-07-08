@@ -46,48 +46,6 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Blog",
-      item: `${BASE_URL}/blog`,
-    },
-  ],
-};
-
-const collectionSchema = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "Flash 4K IPTV Blog",
-  description:
-    "Expert IPTV guides, setup tutorials, device optimization tips, and streaming insights from flash 4k iptv.",
-  publisher: {
-    "@type": "Organization",
-    name: "Flash 4K IPTV",
-    logo: {
-      "@type": "ImageObject",
-      url: `${BASE_URL}/icones.png`,
-    },
-  },
-};
-
 export default function BlogLayout({ children }: { children: ReactNode }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
-      />
-      {children}
-    </>
-  );
+  return children;
 }
