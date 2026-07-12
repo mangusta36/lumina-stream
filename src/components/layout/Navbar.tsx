@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {/* زر واتساب - بقا كيمما هو */}
         <a 
-          href="https://wa.me/212776203783" 
+          href="https://wa.me/447828714977" 
           target="_blank"
           className="bg-primary hover:bg-secondary text-white px-7 py-3 rounded-full font-black text-sm flex items-center gap-2 transition-all shadow-lg shadow-primary/30 transform hover:scale-105 active:scale-95"
         >

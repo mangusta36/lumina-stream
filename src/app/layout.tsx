@@ -66,11 +66,11 @@ const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer support",
-    "telephone": "+212-776203783",
+    "telephone": "+44-7828714977",
     "availableLanguage": ["English", "Arabic", "French", "Spanish"]
   },
     "sameAs": [
-      "https://wa.me/212776203783"
+      "https://wa.me/447828714977"
     ]
 };
 

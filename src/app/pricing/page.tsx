@@ -14,7 +14,7 @@ export default function PricingPage() {
       features: ["26,000+ live channels", "100,000+ vods", "4k & fhd quality", "anti-freeze servers", "all devices supported", "24/7 whatsapp support"],
       isPopular: false,
       isBestValue: false,
-      waMessage: "hello, i want to order the flash 4k iptv 3 months plan (€37)"
+      waMessage: "Hello, I want to order the Flash 4K IPTV Basic Package — 3 Months — $37."
     },
     {
       badge: "— popular —",
@@ -25,7 +25,7 @@ export default function PricingPage() {
       features: ["26,000+ live channels", "100,000+ vods", "4k & fhd quality", "anti-freeze servers", "all devices supported", "24/7 whatsapp support"],
       isPopular: true,
       isBestValue: false,
-      waMessage: "hello, i want to order the flash 4k iptv 6 months plan (€49)"
+      waMessage: "Hello, I want to order the Flash 4K IPTV Silver Package — 6 Months — $49."
     },
     {
       badge: "— premium —",
@@ -36,11 +36,11 @@ export default function PricingPage() {
       features: ["26,000+ live channels", "100,000+ vods", "4k & fhd quality", "anti-freeze servers", "all devices supported", "24/7 whatsapp support", "free setup assistance"],
       isPopular: false,
       isBestValue: true,
-      waMessage: "hello, i want to order the flash 4k iptv 12 months plan (€67)"
+      waMessage: "Hello, I want to order the Flash 4K IPTV Gold Package — 12 Months — $67."
     }
   ];
 
-  const WHATSAPP_NUMBER = "212776203783";
+  const WHATSAPP_NUMBER = "447828714977";
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-primary/30">
