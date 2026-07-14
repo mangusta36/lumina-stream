@@ -51,7 +51,7 @@ export default function SupportPage() {
           
           {/* WhatsApp Card */}
           <a 
-            href="https://wa.me/447828714977?text=Hello! I need help with my Flash 4K IPTV subscription. Can you assist?" 
+            href="https://wa.me/212753936672?text=Hello! I need help with my Flash 4K IPTV subscription. Can you assist?" 
             target="_blank"
             className="group relative p-12 rounded-[3.5rem] bg-surface border border-white/5 hover:border-[#25D366]/50 transition-all duration-500 cursor-pointer"
           >

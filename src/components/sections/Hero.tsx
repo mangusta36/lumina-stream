@@ -20,6 +20,7 @@ const PRICING_PLANS = [
     duration: "3 Months",
     features: ["26,000+ Live Channels", "100,000+ VODs", "4K & FHD Quality", "Anti-Freeze Servers", "All Devices Supported", "24/7 WhatsApp Support"],
     recommended: false,
+    waLink: "https://wa.me/212753936672?text=" + encodeURIComponent("Hello, I want to order the Flash 4K IPTV Basic Access — 3 Months — $37."),
   },
   {
     name: "ultimate vip",
@@ -27,6 +28,7 @@ const PRICING_PLANS = [
     duration: "12 Months",
     features: ["26,000+ Live Channels", "100,000+ VODs", "4K & FHD Quality", "Anti-Freeze Servers", "All Devices Supported", "24/7 WhatsApp Support", "Free Setup Assistance"],
     recommended: true,
+    waLink: "https://wa.me/212753936672?text=" + encodeURIComponent("Hello, I want to order the Flash 4K IPTV Ultimate VIP — 12 Months — $67."),
   },
   {
     name: "standard pro",
@@ -34,10 +36,11 @@ const PRICING_PLANS = [
     duration: "6 Months",
     features: ["26,000+ Live Channels", "100,000+ VODs", "4K & FHD Quality", "Anti-Freeze Servers", "All Devices Supported", "24/7 WhatsApp Support"],
     recommended: false,
+    waLink: "https://wa.me/212753936672?text=" + encodeURIComponent("Hello, I want to order the Flash 4K IPTV Standard Pro — 6 Months — $49."),
   },
 ];
 
-const WHATSAPP_LINK = "https://wa.me/447828714977?text=Hello! I want to try the free trial of Flash 4K IPTV and check the setup.";
+const WHATSAPP_TRIAL_LINK = "https://wa.me/212753936672?text=" + encodeURIComponent("Hello! I want to try the free trial of Flash 4K IPTV and check the setup.");
 
 export default function HeroPage() {
   return (
@@ -86,7 +89,7 @@ export default function HeroPage() {
             <a href="#pricing" className="group relative px-12 py-5 bg-cyan-500 rounded-2xl font-black text-black uppercase tracking-tighter transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)] active:scale-95 text-lg">
               explore plans
             </a>
-            <a href={WHATSAPP_LINK} target="_blank" className="px-12 py-5 bg-white/5 border border-white/10 hover:bg-white/10 rounded-2xl font-black transition-all backdrop-blur-md text-white uppercase tracking-tighter text-lg">
+            <a href={WHATSAPP_TRIAL_LINK} target="_blank" className="px-12 py-5 bg-white/5 border border-white/10 hover:bg-white/10 rounded-2xl font-black transition-all backdrop-blur-md text-white uppercase tracking-tighter text-lg">
               GET TRIAL
             </a>
           </div>
@@ -156,7 +159,7 @@ export default function HeroPage() {
                   ))}
                 </ul>
 
-                <a href={WHATSAPP_LINK} target="_blank" className={`block text-center py-5 rounded-2xl font-black uppercase tracking-tighter transition-all ${
+                <a href={plan.waLink} target="_blank" className={`block text-center py-5 rounded-2xl font-black uppercase tracking-tighter transition-all ${
                   plan.recommended ? 'bg-cyan-500 text-black shadow-lg shadow-cyan-500/20 hover:bg-cyan-400' : 'bg-white/5 text-white hover:bg-white/10'
                 }`}>
                   Subscribe Now

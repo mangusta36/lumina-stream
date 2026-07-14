@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { MessageCircle } from "lucide-react";
 
 export default function PrivacyPage() {
-  const WHATSAPP = "https://wa.me/447828714977";
+  const WHATSAPP = "https://wa.me/212753936672";
 
   return (
     <main className="min-h-screen bg-[#020202] text-white overflow-hidden selection:bg-primary selection:text-white">
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
               className="inline-flex items-center gap-3 bg-primary/10 border border-primary/30 text-primary px-6 py-4 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 font-bold italic lowercase"
             >
               <MessageCircle size={20} />
-              +44 7828714977 — chat on whatsapp
+              +212 753936672 — chat on whatsapp
             </a>
           </section>
 
