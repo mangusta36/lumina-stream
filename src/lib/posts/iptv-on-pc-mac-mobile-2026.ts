@@ -42,7 +42,7 @@ export const iptvOnPcMacMobile2026 = {
         <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">1. why cross-platform iptv matters in 2026</h2>
         <p>
           the way we consume television in 2026 has fundamentally changed. the idea of being tethered to a single living room screen is obsolete. modern viewers expect their content to follow them from their desktop workstation to their smartphone on the morning commute, and finally to their tablet on the couch. <strong>flash 4k iptv</strong> was built for exactly this multi-platform reality.
-        </p>
+         Experience premium streaming with <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a>.</p>
         <p class="mt-4">
           unlike traditional cable providers that lock you into a single set-top box, <strong>flash 4k iptv</strong> delivers your subscription over the open internet using standard protocols. this means you can access your full channel lineup, VOD library, and EPG data on virtually any device with a screen and a network connection. the same Xtream Codes API credentials that power your smart TV setup also unlock the service on your Windows laptop, MacBook, Android phone, or iPhone.
         </p>
@@ -165,160 +165,6 @@ export const iptvOnPcMacMobile2026 = {
         </div>
       </section>
 
-      <section id="android-mobile" class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">4. flash 4k iptv on android phones & tablets</h2>
-        <p>
-          android is the most open mobile platform for IPTV, with dozens of player apps available from both the Google Play Store and direct APK downloads. modern android phones with 2026 flagship chipsets can handle 4K IPTV streams effortlessly, and the best apps deliver an experience that rivals dedicated streaming boxes.
-        </p>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">best player apps for android</h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">tivimate mobile companion (paid)</h4>
-            <p class="text-sm">the mobile version of the legendary TiviMate player. synced playback progress and favorites with the TV version through cloud backup. supports Xtream Codes API, M3U playlists, and provides the same grid EPG that made TiviMate famous on Android TV.</p>
-            <p class="text-xs text-gray-400 mt-2">Best for users who already use TiviMate on their TV. The mobile companion app syncs favorites and recently watched channels. Supports picture-in-picture mode on Android 12+.</p>
-          </div>
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">ott navigator (free / paid)</h4>
-            <p class="text-sm">a lightweight, highly customizable IPTV app built for mobile. uses significantly less battery than competing apps by leveraging Android's native ExoPlayer library. supports external video players like MX Player and VLC for specialized codec handling.</p>
-            <p class="text-xs text-gray-400 mt-2">Pros: ultra-low battery drain, customizable interface, support for external players, advanced catch-up. Cons: interface can feel dated compared to TiviMate.</p>
-          </div>
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">iptv smarters pro (free)</h4>
-            <p class="text-sm">the same easy-to-use app from Windows, now on android. identical Xtream Codes login flow, same familiar interface. the android version adds mobile-specific features like touch gesture controls for volume and brightness during playback.</p>
-            <p class="text-xs text-gray-400 mt-2">Pros: simplest setup, consistent experience across platforms, parental controls. Cons: contains ads in the free version, limited customization.</p>
-          </div>
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">televiso (free)</h4>
-            <p class="text-sm">a relatively new player designed specifically for mobile IPTV. features a modern Material You design with dynamic color theming. built-in VPN integration lets you connect to a proxy server directly from the app without a separate VPN app.</p>
-            <p class="text-xs text-gray-400 mt-2">Pros: modern UI, integrated proxy support, excellent touch controls. Cons: newer app with smaller community, fewer advanced features than OTT Navigator.</p>
-          </div>
-        </div>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">step-by-step: xtream codes setup on android</h3>
-        <ol class="list-decimal list-inside space-y-3 text-sm text-gray-300">
-          <li>Download OTT Navigator or IPTV Smarters Pro from the Google Play Store.</li>
-          <li>Open the app and select <strong>Xtream Codes API</strong> as your connection method.</li>
-          <li>Enter your <strong>flash 4k iptv</strong> server URL, username, and password.</li>
-          <li>Allow the app to download channel groups and EPG data. on a modern 5G connection, this takes under 10 seconds.</li>
-          <li>Tap any channel to start streaming. swipe left or right to change channels.</li>
-          <li>Enable <strong>Picture-in-Picture</strong> in the app settings to continue watching in a floating window while using other apps.</li>
-        </ol>
-
-        <div class="bg-black/40 p-8 rounded-2xl mt-8 border-l-4 border-primary">
-          <h4 class="text-white font-bold mb-4 uppercase underline underline-offset-4">android battery optimization tips for iptv</h4>
-          <ul class="list-disc list-inside text-sm space-y-2">
-            <li>Disable battery optimization for your IPTV app: Settings &gt; Apps &gt; [App Name] &gt; Battery &gt; Unrestricted. this prevents android from killing the app during long streams.</li>
-            <li>Reduce streaming quality to 1080p when on cellular data to extend battery life by up to 3 hours.</li>
-            <li>Use OTT Navigator with ExoPlayer. ExoPlayer uses less battery than VLC on mobile because it integrates directly with Android's hardware decoder pipeline.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="ios">
-        <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">5. flash 4k iptv on iphone & ipad</h2>
-        <p>
-          ios has historically been the most restrictive platform for IPTV due to Apple's App Store policies. however, 2026 offers more options than ever. while sideloading remains an option for advanced users, several high-quality apps are available directly from the App Store, and Safari-based streaming has improved dramatically with the latest iOS versions.
-        </p>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">best player apps for ios</h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">gse smart iptv (paid)</h4>
-            <p class="text-sm">the gold standard for IPTV on iOS. supports Xtream Codes API, M3U playlists, and local file imports. includes a polished EPG with day/week views, AirPlay integration for streaming to Apple TV, and iCloud sync for playlist data across your iPhone, iPad, and Mac.</p>
-            <p class="text-xs text-gray-400 mt-2">Available on the App Store for a one-time purchase. Supports HLS and MPEG-TS streams. The built-in player supports hardware decoding on A17 and M-series chips for efficient 4K playback.</p>
-          </div>
-          <div class="border border-white/5 p-6 rounded-2xl bg-black/20">
-            <h4 class="text-white font-black uppercase mb-3 underline decoration-primary">iplaytv (paid)</h4>
-            <p class="text-sm">a newer entrant that has quickly gained popularity for its clean, modern interface designed specifically for iOS design guidelines. features include swipe gestures for channel changing, a compact EPG that works in portrait mode, and background audio playback for listening to news or music channels with the screen off.</p>
-            <p class="text-xs text-gray-400 mt-2">Exclusive to iOS. One-time purchase with no subscription. The developer releases updates monthly with new features and iOS compatibility fixes.</p>
-          </div>
-        </div>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">safari-based streaming (free, no app needed)</h3>
-        <p>
-          if you prefer not to install a dedicated app, <strong>flash 4k iptv</strong> streams are accessible directly through Safari on iPhone and iPad. the <strong>flash 4k iptv</strong> web portal supports HLS streaming natively in Safari, which has first-class support for HTTP Live Streaming on iOS. simply log in to your account dashboard, browse the channel list, and tap any channel to begin playback. Safari on iOS 18+ supports full-screen video with system-level playback controls and even Picture-in-Picture mode.
-        </p>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">ios-specific tips for optimal streaming</h3>
-        <ul class="list-disc list-inside space-y-3 text-sm text-gray-300">
-          <li><strong>enable picture-in-picture:</strong> iOS 18+ PiP works with most IPTV apps. when a video is playing, swipe up to go to the home screen and the stream continues in a resizable floating window. enable this in Settings &gt; General &gt; Picture in Picture.</li>
-          <li><strong>background audio:</strong> iPlayTV supports background audio playback. enable it in the app settings to listen to music channels or news broadcasts while using other apps with the screen locked.</li>
-          <li><strong>airplay to apple tv:</strong> from GSE Smart IPTV or Safari, tap the AirPlay icon and select your Apple TV. the <strong>flash 4k iptv</strong> stream is sent directly to your television with zero quality loss.</li>
-          <li><strong>offline caching (limited):</strong> some iOS IPTV apps can cache EPG data and channel lists offline, but live streaming always requires an active internet connection. for offline viewing, use the VOD download feature if available in your player app.</li>
-        </ul>
-
-        <div class="bg-black/40 p-8 rounded-2xl mt-8 border-l-4 border-primary">
-          <h4 class="text-white font-bold mb-4 uppercase underline underline-offset-4">sideloading option for advanced ios users</h4>
-          <p class="text-sm">for advanced users, sideloading IPTV apps using AltStore or SideStore provides access to apps not available on the official App Store. the most popular sideloaded IPTV app is iSTB, which offers TiviMate-like functionality on iOS. sideloading requires an Apple ID and a computer for initial installation, and apps must be refreshed every 7 days without a developer account. this method is not recommended for most users; the App Store options above provide a more stable experience.</p>
-        </div>
-      </section>
-
-      <section id="best-players" class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">6. best cross-platform players compared</h2>
-        <p class="mb-6">the apps you choose on desktop and mobile mirror many of the same players available on smart tvs and streaming boxes. here is a quick summary of the most popular cross-platform options — for the full comparison including benchmark data, pros and cons, and platform-specific recommendations, see our dedicated <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">definitive IPTV player guide 2026</a>.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">VLC</strong> — free universal player, M3U only, great for manual setup on all platforms.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">IPTV Smarters Pro</strong> — free, xtream codes, runs on virtually every device with a consistent interface.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">GSE Smart IPTV</strong> — paid, best for macOS and iOS with broad codec support and AirPlay.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">OTT Navigator</strong> — lightweight android player with low battery drain and ExoPlayer integration.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">TiviMate</strong> — premium android player, fastest EPG, up to 9 multi-view streams, sideload on Fire TV.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">MyIPTV Player</strong> — native Windows app with recording scheduler and excellent EPG caching.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">iPlayTV</strong> — polished iOS player with gesture controls and background audio playback.</div>
-          <div class="bg-black/20 p-4 rounded-xl border border-white/5"><strong class="text-white">PotPlayer</strong> — ultra-lightweight Windows alternative to VLC, ideal for older PCs.</div>
-        </div>
-      </section>
-
-      <section id="vpn">
-        <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">7. vpn setup for pc and mobile iptv</h2>
-        <p>
-          streaming <strong>flash 4k iptv</strong> on PC and mobile introduces unique privacy considerations. desktop operating systems expose more network information to applications, while mobile devices frequently connect to untrusted public Wi-Fi networks. a properly configured VPN addresses both concerns.
-        </p>
-        <p class="mt-4">
-          on windows and macos, use a VPN client that supports <strong>WireGuard 2.0</strong>. WireGuard offers the lowest latency overhead of any modern VPN protocol, typically adding less than 3 milliseconds to your connection. this is critical for live sports and real-time streaming where every millisecond counts. for a complete guide on selecting and configuring a VPN, read our dedicated <a href="/blog/security-vpn-iptv-2026" class="text-primary underline underline-offset-4 font-bold">security and VPN guide for flash 4k iptv</a>.
-        </p>
-        <p class="mt-4">
-          on android, apps like Televiso include built-in proxy support, allowing you to route your IPTV traffic through a VPN without installing a separate app. on iOS, GSE Smart IPTV supports SOCKS5 proxy configuration within the app, which is useful when you want to route only your IPTV traffic through the VPN tunnel while keeping other apps on your regular connection.
-        </p>
-
-        <div class="bg-black/40 p-8 rounded-2xl mt-8 border-l-4 border-primary">
-          <h4 class="text-white font-bold mb-4 uppercase underline underline-offset-4">mobile vpn best practices</h4>
-          <ul class="list-disc list-inside text-sm space-y-2">
-            <li>Use WireGuard protocol on mobile. it uses less battery than OpenVPN because it operates in the kernel with fewer context switches.</li>
-            <li>Enable <strong>kill switch</strong> on your VPN app to block all traffic if the VPN disconnects unexpectedly, preventing your real IP from leaking.</li>
-            <li>On iPhone, use a VPN that supports the <strong>On-Demand</strong> feature. this automatically connects the VPN whenever your device joins an untrusted network like a coffee shop Wi-Fi.</li>
-            <li>Avoid free VPNs. they often lack the server capacity needed for 4K streaming and may throttle your bandwidth at peak hours.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="network">
-        <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">8. network optimization for portable devices</h2>
-        <p>
-          streaming <strong>flash 4k iptv</strong> on a laptop or phone introduces network challenges that dedicated home setups do not face. variable signal strength, competing background apps, and cellular data management all affect stream stability. here is how to optimize each scenario.
-        </p>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">wi-fi optimization for laptops</h3>
-        <ul class="list-disc list-inside space-y-3 text-sm text-gray-300">
-          <li><strong>use the 5 GHz band:</strong> 2.4 GHz Wi-Fi is congested with Bluetooth devices, microwaves, and neighbor networks. connect your laptop to the 5 GHz band for cleaner throughput. if your router supports Wi-Fi 6E or Wi-Fi 7, use the 6 GHz band for even less interference.</li>
-          <li><strong>disable background applications:</strong> windows and macOS both run background updaters, cloud sync clients, and telemetry services that consume bandwidth. before starting a critical stream, close OneDrive, Dropbox, Steam, and browser tabs with auto-playing video.</li>
-          <li><strong>ethernet over Wi-Fi:</strong> for important events like a PPV fight or Champions League final, connect your laptop directly to the router with an ethernet cable. even a USB-C to ethernet adapter provides more stable throughput than any wireless connection.</li>
-        </ul>
-
-        <h3 class="text-2xl font-black text-white uppercase italic mt-10 mb-4">cellular streaming optimization</h3>
-        <ul class="list-disc list-inside space-y-3 text-sm text-gray-300">
-          <li><strong>5G vs 4G LTE:</strong> 5G delivers the speeds needed for 4K IPTV (25+ Mbps sustained), but 4G LTE with strong signal can handle 1080p without issues. <strong>flash 4k iptv</strong> adaptive streaming automatically adjusts to your available bandwidth.</li>
-          <li><strong>data saver considerations:</strong> android and iOS data saver modes may restrict background app activity. add your IPTV app to the list of apps allowed unrestricted data access in Settings.</li>
-          <li><strong>monitor your data cap:</strong> a single hour of 4K IPTV streaming consumes approximately 15-20 GB of data. if you have a limited cellular plan, switch to 1080p or 720p quality in your player app settings to reduce consumption by 60-75%.</li>
-        </ul>
-
-        <p class="mt-4">
-          for a comprehensive guide to eliminating buffering and optimizing your home network, see our <a href="/blog/stop-iptv-buffering-forever" class="text-primary underline underline-offset-4 font-bold">complete buffering guide</a> and <a href="/blog/stop-iptv-lag-network-guide-2026" class="text-primary underline underline-offset-4 font-bold">advanced network optimization guide</a>.
-        </p>
-      </section>
-
       <section id="casting" class="bg-white/5 p-8 rounded-[2rem] border border-white/10 my-12 shadow-2xl">
         <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">9. casting from mobile to tv</h2>
         <p>
@@ -369,7 +215,55 @@ export const iptvOnPcMacMobile2026 = {
             <p class="text-sm text-gray-300">we strongly recommend using a VPN when streaming <strong>flash 4k iptv</strong> on any public Wi-Fi network. without a VPN, your credentials and streaming activity are visible to anyone on the same network. a WireGuard VPN encrypts all traffic and prevents credential theft.</p>
           </div>
         </div>
+      
+      <!-- Section A: Hardware Video Decoding & Codec Performance -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">hardware video decoding & codec benchmarks</h2>
+        <p>
+          High-definition IPTV streaming relies on hardware-accelerated video decoding to render 60fps live broadcasts without CPU frame drops or thermal throttling.
+        </p>
+        <p class="mt-4">
+          <strong>H.264 vs HEVC H.265 vs AV1 Decoding:</strong> Modern streaming devices (such as Apple TV 4K, Nvidia Shield, and Fire TV Stick 4K Max) feature dedicated SoC hardware decoders that process HEVC (H.265) and AV1 video streams with low energy consumption. Utilizing hardware decoding (HW+) inside player settings reduces device operating temperatures and prevents playback stuttering during high-bitrate 4K broadcasts.
+        </p>
       </section>
+    
+
+      <!-- Section B: Wi-Fi 6 Frequency Bands & Local Network Throughput -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">wi-fi 6 frequency bands & local network throughput</h2>
+        <p>
+          Wireless network stability is essential for streaming 4K video feeds. While 2.4GHz Wi-Fi offers long signal range, its 20MHz channel width suffers from heavy RF interference from neighboring routers and micro-switches.
+        </p>
+        <p class="mt-4">
+          <strong>Optimizing 5GHz & 6GHz Channels:</strong> Connecting your TV or streaming stick to the 5GHz or 6GHz Wi-Fi band using 80MHz or 160MHz channel widths guarantees clean downstream throughput exceeding 200 Mbps. For rooms separated by concrete walls, installing MoCA 2.5 coaxial adapters or Cat6 Ethernet cables ensures wire-grade streaming reliability.
+        </p>
+      </section>
+    
+
+      <!-- Section C: Router QoS & Quality of Service Settings -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">router qos & quality of service configuration</h2>
+        <p>
+          Home network routers manage simultaneous data traffic from phones, laptops, smart home appliances, and streaming televisions. When multiple family members stream video or play games simultaneously, packet queue congestion can occur.
+        </p>
+        <p class="mt-4">
+          <strong>Prioritizing TV Stream Packets:</strong> Access your router's administrator panel (typically <code>192.168.1.1</code>), navigate to <em>Quality of Service (QoS) Settings</em>, and add your streaming stick's MAC address to the <strong>High Priority Queue</strong>. This guarantees that live video packets receive immediate bandwidth priority over background cloud backups and heavy file downloads.
+        </p>
+      </section>
+    
+
+      <!-- Section D: Audio Bitstream Passthrough & Surround Sound Setup -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">audio bitstream passthrough & dolby surround configuration</h2>
+        <p>
+          High-definition IPTV streams and 4K movie catalogs deliver multi-channel audio tracks (including Dolby Digital 5.1, AC3, and E-AC3 Dolby Digital Plus). Passing raw multi-channel audio directly to an AV receiver or soundbar requires proper digital sound configuration.
+        </p>
+        <p class="mt-4">
+          <strong>Enabling HDMI eARC Passthrough:</strong> Connect an HDMI 2.1 cable from your TV's eARC port to your soundbar. In your TV sound menu, set Digital Output Format to <strong>Passthrough</strong> or <strong>Bitstream</strong> (avoid PCM downmixing). In your IPTV player settings (such as TiviMate or IPTV Smarters), toggle <em>Audio Passthrough</em> to Enabled.
+        </p>
+      </section>
+    
+</section>
 
       <div class="border-t border-white/10 pt-10 mt-12">
         <p class="text-lg">

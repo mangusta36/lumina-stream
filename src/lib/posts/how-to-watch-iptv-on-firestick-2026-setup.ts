@@ -41,7 +41,7 @@ export const howToWatchIptvOnFirestick2026Setup = {
         <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">1. why firestick is the best device for iptv</h2>
         <p>
           The Amazon Firestick has become the most popular IPTV streaming device in the world, and for good reason. It is affordable, compact, powerful enough for 4K streaming, and runs a modified version of Android that gives you access to thousands of apps. When paired with <strong>flash 4k iptv</strong>, the Firestick delivers a premium television experience that rivals high-end smart TVs at a fraction of the cost.
-        </p>
+         Experience premium streaming with <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a>.</p>
         <p class="mt-4">
           The latest Firestick models feature the Mediatek MT8696 processor with a quad-core CPU and PowerVR GPU, capable of decoding 4K HDR content at 60 fps without breaking a sweat. They also support Wi-Fi 6 and Bluetooth 5.2, ensuring fast and stable connections. The Firestick 4K Max specifically adds support for AV1 hardware decoding, which is important for future-proofing your IPTV setup as more content moves to this efficient codec.
         </p>
@@ -210,7 +210,55 @@ export const howToWatchIptvOnFirestick2026Setup = {
         <p class="mt-4">
           For users interested in the future of Firestick and IPTV technology, our <a href="/blog/future-of-iptv-2026-2030" class="text-primary underline underline-offset-4 font-bold">IPTV future trends guide</a> explores how streaming will evolve through 2030, including 8K support, AI-powered content recommendations, and deeper Fire OS integration.
         </p>
+      
+      <!-- EPG Cache Storage & Multi-Source Guide Synchronization -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">epg guide cache storage & guide synchronization</h2>
+        <p>
+          Electronic Program Guide (EPG) databases store program titles, episode summaries, and channel logos across thousands of television channels.
+        </p>
+        <p class="mt-4">
+          <strong>Optimizing EPG Refresh Intervals:</strong> Set your player application to update guide data once every 24 hours during overnight hours. Configure EPG retention for 2 to 3 days to preserve historical catch-up program listings without over-filling local device storage.
+        </p>
       </section>
+    
+
+      <!-- Auto Frame Rate (AFR) Matching & Motion Judder -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">auto frame rate (afr) matching & motion judder reduction</h2>
+        <p>
+          Live television broadcasts originate from different international frame rates—North American broadcasts use 60Hz (59.94fps), while European sports feeds use 50Hz (50fps) and cinema movies use 24Hz (23.976fps). Displaying a 50Hz European soccer stream on a TV locked at 60Hz causes subtle micro-stuttering known as motion judder.
+        </p>
+        <p class="mt-4">
+          <strong>Enabling AFR in Player Apps:</strong> Modern streaming players (such as TiviMate and Sparkle TV) support Auto Frame Rate (AFR) matching. When AFR is enabled, the player app instructs your TV panel to match the broadcast frame rate dynamically, ensuring smooth camera pans during live sports and cinematic playback.
+        </p>
+      </section>
+    
+
+      <!-- Audio Bitstream Passthrough & Surround Sound Setup -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">audio bitstream passthrough & dolby surround configuration</h2>
+        <p>
+          High-definition IPTV streams and 4K movie catalogs deliver multi-channel audio tracks (including Dolby Digital 5.1, AC3, and E-AC3 Dolby Digital Plus). Passing raw multi-channel audio directly to an AV receiver or soundbar requires proper digital sound configuration.
+        </p>
+        <p class="mt-4">
+          <strong>Enabling HDMI eARC Passthrough:</strong> Connect an HDMI 2.1 cable from your TV's eARC port to your soundbar. In your TV sound menu, set Digital Output Format to <strong>Passthrough</strong> or <strong>Bitstream</strong> (avoid PCM downmixing). In your IPTV player settings (such as TiviMate or IPTV Smarters), toggle <em>Audio Passthrough</em> to Enabled.
+        </p>
+      </section>
+    
+
+      <!-- Router QoS & Quality of Service Settings -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">router qos & quality of service configuration</h2>
+        <p>
+          Home network routers manage simultaneous data traffic from phones, laptops, smart home appliances, and streaming televisions. When multiple family members stream video or play games simultaneously, packet queue congestion can occur.
+        </p>
+        <p class="mt-4">
+          <strong>Prioritizing TV Stream Packets:</strong> Access your router's administrator panel (typically <code>192.168.1.1</code>), navigate to <em>Quality of Service (QoS) Settings</em>, and add your streaming stick's MAC address to the <strong>High Priority Queue</strong>. This guarantees that live video packets receive immediate bandwidth priority over background cloud backups and heavy file downloads.
+        </p>
+      </section>
+    
+</section>
 
       <footer class="mt-20 text-center border-t border-white/10 pt-12">
         <p class="text-white font-black italic uppercase text-2xl tracking-tighter shadow-primary">

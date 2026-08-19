@@ -53,7 +53,7 @@ export const iptvVsCableTv2026 = {
         <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">1. how much does each service actually cost?</h2>
         <p>
           Price is the most common reason people leave cable, but the gap between IPTV and streaming services is wider than most shoppers realize. YouTube TV costs $82.99 per month in 2026. Hulu + Live TV runs $82.99 per month with its Disney+ and ESPN+ bundle. Sling TV starts at $45.99 for 35 channels. A premium IPTV subscription costs $15 to $25 per month for 15,000+ channels.
-        </p>
+         Streaming with <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a> provides pristine 4K video quality.</p>
         <p class="mt-4">
           The annual difference is stark. A YouTube TV household spends roughly $995 per year. An IPTV household at $20 per month spends $240. That $755 annual gap compounds. Over five years, the YouTube TV subscriber pays nearly $5,000 for live television. The IPTV subscriber pays about $1,200. The savings from IPTV alone could cover a new television, a streaming device upgrade, and a Netflix subscription for half a decade.
         </p>
@@ -240,7 +240,55 @@ export const iptvVsCableTv2026 = {
         </div>
       </section>
 
-      <!-- FAQ Section -->
+      
+      <!-- EPG Cache Storage & Multi-Source Guide Synchronization -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">epg guide cache storage & guide synchronization</h2>
+        <p>
+          Electronic Program Guide (EPG) databases store program titles, episode summaries, and channel logos across thousands of television channels.
+        </p>
+        <p class="mt-4">
+          <strong>Optimizing EPG Refresh Intervals:</strong> Set your player application to update guide data once every 24 hours during overnight hours. Configure EPG retention for 2 to 3 days to preserve historical catch-up program listings without over-filling local device storage.
+        </p>
+      </section>
+    
+
+      <!-- Auto Frame Rate (AFR) Matching & Motion Judder -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">auto frame rate (afr) matching & motion judder reduction</h2>
+        <p>
+          Live television broadcasts originate from different international frame rates—North American broadcasts use 60Hz (59.94fps), while European sports feeds use 50Hz (50fps) and cinema movies use 24Hz (23.976fps). Displaying a 50Hz European soccer stream on a TV locked at 60Hz causes subtle micro-stuttering known as motion judder.
+        </p>
+        <p class="mt-4">
+          <strong>Enabling AFR in Player Apps:</strong> Modern streaming players (such as TiviMate and Sparkle TV) support Auto Frame Rate (AFR) matching. When AFR is enabled, the player app instructs your TV panel to match the broadcast frame rate dynamically, ensuring smooth camera pans during live sports and cinematic playback.
+        </p>
+      </section>
+    
+
+      <!-- Audio Bitstream Passthrough & Surround Sound Setup -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">audio bitstream passthrough & dolby surround configuration</h2>
+        <p>
+          High-definition IPTV streams and 4K movie catalogs deliver multi-channel audio tracks (including Dolby Digital 5.1, AC3, and E-AC3 Dolby Digital Plus). Passing raw multi-channel audio directly to an AV receiver or soundbar requires proper digital sound configuration.
+        </p>
+        <p class="mt-4">
+          <strong>Enabling HDMI eARC Passthrough:</strong> Connect an HDMI 2.1 cable from your TV's eARC port to your soundbar. In your TV sound menu, set Digital Output Format to <strong>Passthrough</strong> or <strong>Bitstream</strong> (avoid PCM downmixing). In your IPTV player settings (such as TiviMate or IPTV Smarters), toggle <em>Audio Passthrough</em> to Enabled.
+        </p>
+      </section>
+    
+
+      <!-- Router QoS & Quality of Service Settings -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">router qos & quality of service configuration</h2>
+        <p>
+          Home network routers manage simultaneous data traffic from phones, laptops, smart home appliances, and streaming televisions. When multiple family members stream video or play games simultaneously, packet queue congestion can occur.
+        </p>
+        <p class="mt-4">
+          <strong>Prioritizing TV Stream Packets:</strong> Access your router's administrator panel (typically <code>192.168.1.1</code>), navigate to <em>Quality of Service (QoS) Settings</em>, and add your streaming stick's MAC address to the <strong>High Priority Queue</strong>. This guarantees that live video packets receive immediate bandwidth priority over background cloud backups and heavy file downloads.
+        </p>
+      </section>
+    
+<!-- FAQ Section -->
       <section id="faq" class="bg-white/5 p-10 rounded-[3rem] mt-20 border border-white/5 shadow-inner">
         <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2 underline underline-offset-8">frequently asked questions</h2>
         <div class="space-y-10 text-sm">

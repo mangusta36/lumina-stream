@@ -61,7 +61,7 @@ export const smartTvOptimizationGuide = {
           </div>
           <div class="bg-black/40 p-6 rounded-2xl border-l-4 border-primary">
             <h4 class="text-white font-bold mb-2 italic uppercase tracking-tighter underline">run device care before iptv sessions</h4>
-            <p class="text-sm italic font-medium">samsung's <strong>device care</strong> tool (found in <strong>settings > device care</strong>) closes suspended background apps, clears temporary cache files, and reports available memory. running it before launching your iptv player freed 240mb of additional ram on our test unit — bringing available memory from 380mb to 620mb. that extra headroom directly improves 4k stream stability by giving the video decoder more buffer space. on the qn90d, running device care reduced rebuffer events from an average of 3 per hour to zero during a 90-minute 4k hdr stream at 25mbps — matching the stability of our flash 4k iptv reference setup on dedicated hardware.</p>
+            <p class="text-sm italic font-medium">samsung's <strong>device care</strong> tool (found in <strong>settings > device care</strong>) closes suspended background apps, clears temporary cache files, and reports available memory. running it before launching your iptv player freed 240mb of additional ram on our test unit — bringing available memory from 380mb to 620mb. that extra headroom directly improves 4k stream stability by giving the video decoder more buffer space. on the qn90d, running device care reduced rebuffer events from an average of 3 per hour to zero during a 90-minute 4k hdr stream at 25mbps — matching the stability of our <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a> reference setup on dedicated hardware.</p>
           </div>
           <div class="bg-black/40 p-6 rounded-2xl border-l-4 border-primary">
             <h4 class="text-white font-bold mb-2 italic uppercase tracking-tighter underline">disable instant on</h4>
@@ -122,224 +122,43 @@ export const smartTvOptimizationGuide = {
         </div>
       </section>
 
-      <!-- Apple TV Optimization -->
-      <section>
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 italic underline decoration-primary font-bold">5. apple tv optimization — match frame rate, audio & hdmi handshake</h2>
+      
+      <!-- Section A: Hardware Video Decoding & Codec Performance -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">hardware video decoding & codec benchmarks</h2>
         <p>
-          apple tv 4k (3rd generation and later) runs tvos, which is fundamentally different from the other platforms in this guide: apple controls both the hardware and software, resulting in a tightly optimized ecosystem. the apple tv 4k ships with a12 bionic or a15 bionic chips that far exceed the processing power of any smart tv's integrated soc. however, when paired with a television, the apple tv inherits the tv's display processing quirks, which can introduce issues.
+          High-definition IPTV streaming relies on hardware-accelerated video decoding to render 60fps live broadcasts without CPU frame drops or thermal throttling.
         </p>
         <p class="mt-4">
-          note: these optimizations apply to the apple tv's connection to your tv, not to the apple tv device itself. we tested on an apple tv 4k (3rd gen, a15) connected to a 2025 lg g4 oled via hdmi 2.1.
-        </p>
-        <ul class="list-none mt-8 space-y-6 italic font-bold">
-          <li class="flex gap-4">
-            <span class="text-primary font-black text-2xl">01.</span>
-            <p><strong>match frame rate:</strong> on apple tv, go to <strong>settings > video and audio > match content</strong> and enable <strong>match frame rate</strong>. this is the single most important setting for iptv. when disabled, apple tv forces all content to 60hz, even if the source stream is 50hz (common for european channels) or 24hz (films). the resulting 3:2 pulldown judder creates the appearance of micro-stuttering during pans and sports. with match frame rate enabled, the apple tv dynamically switches to the source frame rate, eliminating judder entirely.</p>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-primary font-black text-2xl">02.</span>
-            <p><strong>audio output format:</strong> set <strong>settings > video and audio > audio format > change format</strong> to <strong>off</strong> (auto) for most setups. if you experience audio desync specifically with iptv apps (gse smart iptv, istb), set the format to <strong>stereo</strong> temporarily to isolate whether the issue is surround sound processing. many iptv streams use aac stereo audio, and forcing dolby atmos processing can introduce a 200-400ms delay.</p>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-primary font-black text-2xl">03.</span>
-            <p><strong>hdmi handshake fixes:</strong> if your tv shows a black screen for 3-5 seconds when launching an iptv app on apple tv, the issue is usually hdcp (high-bandwidth digital content protection) renegotiation. on your tv, ensure <strong>hdmi deep color</strong> or <strong>hdmi ultra hd deep color</strong> is enabled for the specific port used by the apple tv. on lg tvs, this is in <strong>settings > general > devices > hdmi settings > hdmi deep color</strong>. on sony tvs, it is under <strong>external inputs > hdmi signal format</strong>. enabling deep color reduces handshake time from approximately 4s to under 1s.</p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Universal Tips -->
-      <section class="bg-white/5 p-10 rounded-[3rem] mt-20 border border-white/5 shadow-inner italic font-bold uppercase">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2 italic underline underline-offset-8">6. universal tips — every smart tv platform</h2>
-        <p class="text-sm italic font-medium mb-8">
-          these optimizations apply regardless of whether you own a samsung, lg, sony, tcl, hisense, or panasonic television. they address the common weakest link: the network and display pipeline between your source and your eyes.
-        </p>
-        <div class="space-y-8 text-sm italic">
-          <div class="flex gap-4">
-            <span class="text-primary font-black text-2xl">01.</span>
-            <div>
-              <h4 class="text-white font-bold mb-1 uppercase">ethernet over wi-fi — always</h4>
-              <p class="text-gray-400">we tested 4k iptv stability across 12 smart tv models on wi-fi 6 versus gigabit ethernet. the average frame stability score was 94% on wi-fi (micro-stutters every 15-20 minutes during 25mbps streams) versus 99.5% on ethernet. if your tv's ethernet port is limited to 100mbps (check in network settings — many 2024-2025 models still ship with fast ethernet), a usb 3.0-to-gigabit ethernet adapter is a worthwhile investment. on the samsung qn90d, a ugreen usb-c gigabit adapter raised achievable throughput from 94mbps to 380mbps, eliminating the bottleneck entirely.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-primary font-black text-2xl">02.</span>
-            <div>
-              <h4 class="text-white font-bold mb-1 uppercase">dns at the router level</h4>
-              <p class="text-gray-400">do not change dns on the tv itself (many tvs ignore manual dns settings during app connections). instead, change the dns server on your router to <strong>cloudflare 1.1.1.1</strong> and <strong>1.0.0.1</strong> or <strong>google 8.8.8.8</strong> and <strong>8.8.4.4</strong>. in our tests, isp-provided dns servers added 80-150ms of resolution latency for iptv playlist and epg urls. cloudflare dns reduced this to 5-15ms, resulting in epg loading 2-3 seconds faster on platforms where the app must resolve new domain names for each channel's stream url.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-primary font-black text-2xl">03.</span>
-            <div>
-              <h4 class="text-white font-bold mb-1 uppercase">hdmi cable specifications matter</h4>
-              <p class="text-gray-400">if you are passing iptv through an external device (apple tv, fire tv, shield) to your tv, the hdmi cable must support the bandwidth of your content. hdmi 2.0 cables handle 4k at 60hz with hdr (18gbps). hdmi 2.1 cables handle 4k at 120hz, 8k at 60hz, and variable refresh rate (48gbps). using a low-quality or damaged hdmi 1.4 cable with a 4k hdr source will cause intermittent black screens, sparkles, or complete signal drops. if you experience any of these, swap the cable first — it is the cheapest and most commonly overlooked fix. for 2026 iptv usage, a certified hdmi 2.1 cable (belkin, zeskit, monoprice) is future-proof and costs under $20.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-primary font-black text-2xl">04.</span>
-            <div>
-              <h4 class="text-white font-bold mb-1 uppercase">disable all motion smoothing</h4>
-              <p class="text-gray-400">motion smoothing is known by different names on each platform: auto motion plus (samsung), trumotion (lg), motionflow (sony), smooth motion (tcl), action smoothing (hisense). regardless of the name, disable it for iptv. motion smoothing inserts artificially generated frames between real frames to create a "smoother" look, but for broadcast-style content this creates the soap opera effect and introduces 50-100ms of additional latency. on low-bitrate iptv channels, it can also create visible halo artifacts around moving objects. look for the motion setting under the picture or display menu and set it to off or custom with all sliders at zero.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-primary font-black text-2xl">05.</span>
-            <div>
-              <h4 class="text-white font-bold mb-1 uppercase">disable unused smart features</h4>
-              <p class="text-gray-400">voice assistants (bixby, alexa, google assistant), automatic content recognition (acr), and personalized ads all consume system resources. disable them in settings. on samsung: <strong>settings > general > voice > voice assistant off</strong>. on lg: <strong>settings > general > ai services > ai recommendation off</strong>. on android tv: <strong>settings > device preferences > google assistant > off</strong>. these changes typically free 50-100mb of ram and reduce background cpu usage by 5-10%, contributing to more consistent iptv frame pacing.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Platform Benchmark Comparison Table -->
-      <section class="mt-12 p-8 bg-white/5 rounded-[2rem] border border-white/5">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 underline decoration-primary">7. platform benchmark comparison 2026</h2>
-        <p class="mb-6 text-sm">
-          the following table compares real-world iptv performance across the four major smart tv platforms, tested on reference hardware at 25mbps 4k hdr stream with a 15,000-channel m3u playlist. all measurements are averaged over three test sessions conducted under identical network conditions (gigabit ethernet, cloudflare dns, 500mbps down).
-        </p>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left bg-black/20 rounded-2xl italic">
-            <thead>
-              <tr class="text-white border-b border-white/10 italic font-black uppercase">
-                <th class="p-4">metric</th>
-                <th class="p-4">samsung tizen 8.0<br><span class="text-xs font-normal text-gray-400">neo qled qn90d</span></th>
-                <th class="p-4">lg webos 24<br><span class="text-xs font-normal text-gray-400">oled g4</span></th>
-                <th class="p-4">android tv 14<br><span class="text-xs font-normal text-gray-400">sony bravia a95l</span></th>
-                <th class="p-4">tvos 18<br><span class="text-xs font-normal text-gray-400">apple tv 4k (3rd gen)</span></th>
-              </tr>
-            </thead>
-            <tbody class="text-sm italic">
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">epg load time</td>
-                <td class="p-4">8 seconds</td>
-                <td class="p-4">11 seconds</td>
-                <td class="p-4">5 seconds</td>
-                <td class="p-4">4 seconds</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">4k stream stability</td>
-                <td class="p-4">96%</td>
-                <td class="p-4">93%</td>
-                <td class="p-4">98%</td>
-                <td class="p-4">99.5%</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">channel switch (optimized)</td>
-                <td class="p-4">1.8 seconds</td>
-                <td class="p-4">2.4 seconds</td>
-                <td class="p-4">1.2 seconds</td>
-                <td class="p-4">0.9 seconds</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">channel switch (default)</td>
-                <td class="p-4">4.2 seconds</td>
-                <td class="p-4">3.1 seconds</td>
-                <td class="p-4">3.5 seconds</td>
-                <td class="p-4">1.8 seconds</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">available ram (post-optimization)</td>
-                <td class="p-4">620mb</td>
-                <td class="p-4">1.1gb</td>
-                <td class="p-4">2.1gb</td>
-                <td class="p-4">n/a (unified memory)</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">app selection (iptv)</td>
-                <td class="p-4">7 apps</td>
-                <td class="p-4">8 apps</td>
-                <td class="p-4">200+ apps</td>
-                <td class="p-4">15 apps</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">4k 60fps frame drops</td>
-                <td class="p-4">2%</td>
-                <td class="p-4">4%</td>
-                <td class="p-4">1%</td>
-                <td class="p-4">0.3%</td>
-              </tr>
-              <tr class="border-b border-white/5">
-                <td class="p-4 font-bold text-white uppercase italic">av1 hardware decoding</td>
-                <td class="p-4">2024+ models</td>
-                <td class="p-4">2024+ models</td>
-                <td class="p-4">2023+ models</td>
-                <td class="p-4">native (a15 bionic)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="mt-6 text-sm text-gray-400">
-          key takeaway: dedicated hardware (apple tv) and open platforms (android tv) outperform closed smart tv operating systems by a significant margin, but the optimization gap is narrower than most users assume. a properly optimized samsung tizen tv (1.8s channel switch, 96% stability) is watchable for 95% of content. the differences become apparent only during high-bitrate 4k sports or when rapidly switching between many channels. for those use cases, android tv devices like the nvidia shield or google tv streamer remain the recommended platform.
+          <strong>H.264 vs HEVC H.265 vs AV1 Decoding:</strong> Modern streaming devices (such as Apple TV 4K, Nvidia Shield, and Fire TV Stick 4K Max) feature dedicated SoC hardware decoders that process HEVC (H.265) and AV1 video streams with low energy consumption. Utilizing hardware decoding (HW+) inside player settings reduces device operating temperatures and prevents playback stuttering during high-bitrate 4K broadcasts.
         </p>
       </section>
+    
 
-      <!-- Platform-Specific Player Recommendations -->
-      <section class="mt-12 p-10 bg-white/5 rounded-[3rem] border border-white/5">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6">8. choosing the right player for your platform</h2>
+      <!-- Section B: Wi-Fi 6 Frequency Bands & Local Network Throughput -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">wi-fi 6 frequency bands & local network throughput</h2>
         <p>
-          optimization settings are only half the equation — the iptv player application you choose must be well-matched to your platform's strengths. a player that leverages hardware decoding on tizen will perform differently than one optimized for android's surfaceview rendering pipeline. we have published a comprehensive <a href="/blog/best-iptv-players-2026" class="text-primary underline underline-offset-4 font-bold">best iptv players 2026 benchmark</a> covering every major platform exhaustively, but here is the short version for each os:
+          Wireless network stability is essential for streaming 4K video feeds. While 2.4GHz Wi-Fi offers long signal range, its 20MHz channel width suffers from heavy RF interference from neighboring routers and micro-switches.
         </p>
-        <ul class="list-none mt-6 space-y-3 text-sm">
-          <li class="flex gap-3">
-            <span class="text-primary font-black">•</span>
-            <p><strong class="text-white">Samsung Tizen:</strong> ibo player pro offers the fastest epg loading and native remote support. smart iptv is a lighter alternative for older tvs with limited ram.</p>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-primary font-black">•</span>
-            <p><strong class="text-white">LG webOS:</strong> ss iptv provides the deepest webos integration with dolby atmos passthrough. ibo player pro is also available but lacks the caching engine of the tizen version.</p>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-primary font-black">•</span>
-            <p><strong class="text-white">Android TV / Google TV:</strong> tivimate premium remains the gold standard for its multi-view support (up to 9 streams), recording engine, and cloud backup. televizo is a lightweight alternative for tvs with 1.5gb ram or less.</p>
-          </li>
-          <li class="flex gap-3">
-            <span class="text-primary font-black">•</span>
-            <p><strong class="text-white">Apple TV:</strong> gse smart iptv leads on codec support including av1, while istb offers a native tvos experience with picture-in-picture and icloud sync.</p>
-          </li>
-        </ul>
+        <p class="mt-4">
+          <strong>Optimizing 5GHz & 6GHz Channels:</strong> Connecting your TV or streaming stick to the 5GHz or 6GHz Wi-Fi band using 80MHz or 160MHz channel widths guarantees clean downstream throughput exceeding 200 Mbps. For rooms separated by concrete walls, installing MoCA 2.5 coaxial adapters or Cat6 Ethernet cables ensures wire-grade streaming reliability.
+        </p>
       </section>
+    
 
-      <!-- FAQ Section -->
-      <section class="bg-white/5 p-10 rounded-[3rem] mt-20 border border-white/5 shadow-inner italic font-bold uppercase">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-8 border-b border-primary w-fit pb-2 italic underline underline-offset-8">smart tv optimization faq</h2>
-        <div class="space-y-8 text-sm italic">
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">is it worth optimizing a smart tv, or should i just buy a streaming box?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">optimizing can dramatically improve performance at zero cost. disabling instant on on a samsung neo qled 2025 reduced channel switching from 4.2s to 1.8s — a 57% improvement. however, if your tv has less than 2gb ram or is pre-2019, a dedicated streaming box will always outperform it. optimize first, then consider a box only if stuttering persists.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline underline-offset-4">does game mode actually help iptv or just gaming?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">game mode reduces input lag by 30-70ms by disabling post-processing filters. for iptv, this is most noticeable during live sports. on lg oleds, game mode also reduces micro-stuttering on 60fps broadcasts by stabilizing frame pacing. safe to leave on permanently for iptv; disable for movies if you prefer cinematic processing.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">will a usb-to-ethernet adapter help?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">if your tv's ethernet port is 100mbps (many 2025 models still are), a usb 3.0-to-gigabit adapter can raise throughput from ~94mbps to 400mbps. check your tv's negotiated link speed in network settings first — if it already shows 1000mbps, a usb adapter will not help.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">how do i access developer options on android tv?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">settings > device preferences > about, tap 'build' seven times. the key settings are limiting background processes to 2-3 and enabling force gpu rendering. these are safe and reversible. do not change animation scales or usb debugging.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">should i disable motion smoothing for iptv?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">yes. motion smoothing adds 50-100ms of input lag and can create artifacts on low-bitrate channels. disable it (auto motion plus on samsung, trumotion on lg, motionflow on sony). re-enable only for sports if preferred.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">how much ram does my smart tv need for 4k iptv?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">2gb minimum, 3gb+ recommended. tvs with 1.5gb or less will struggle with av1-coded 4k streams. if ram-constrained, disable voice assistants, acr, and auto-updates to free memory.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">is wi-fi 6 good enough or do i need ethernet?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">wi-fi 6 delivers approximately 94% stability vs 99.5% on gigabit ethernet in our tests. the difference is 1-2 micro-stutters per hour during high-bitrate sports. for casual viewing wi-fi 6 is fine; for critical events or multi-room setups, use wired ethernet.</p>
-          </div>
-          <div>
-            <h4 class="text-primary font-black italic tracking-wider italic font-bold underline">why does my iptv app crash more on my smart tv than on a streaming stick?</h4>
-            <p class="text-gray-400 mt-2 italic font-bold">smart tvs share ram and cpu with the display engine, telemetry, and background processes — consuming 40-60% of resources before you open any app. streaming sticks run leaner builds. disable unused smart features and run the memory cleaner before launching iptv.</p>
-          </div>
-        </div>
+      <!-- Section C: Router QoS & Quality of Service Settings -->
+      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">router qos & quality of service configuration</h2>
+        <p>
+          Home network routers manage simultaneous data traffic from phones, laptops, smart home appliances, and streaming televisions. When multiple family members stream video or play games simultaneously, packet queue congestion can occur.
+        </p>
+        <p class="mt-4">
+          <strong>Prioritizing TV Stream Packets:</strong> Access your router's administrator panel (typically <code>192.168.1.1</code>), navigate to <em>Quality of Service (QoS) Settings</em>, and add your streaming stick's MAC address to the <strong>High Priority Queue</strong>. This guarantees that live video packets receive immediate bandwidth priority over background cloud backups and heavy file downloads.
+        </p>
       </section>
-
-      <!-- Conclusion -->
+    
+<!-- Conclusion -->
       <section class="mt-12 border-t border-white/10 pt-8">
         <h2 class="text-2xl font-black text-white uppercase italic mb-4">conclusion</h2>
         <p class="text-gray-300">optimizing your smart tv for iptv in 2026 does not require technical expertise or expensive accessories. the most impactful changes — disabling instant on, limiting background processes, switching to ethernet, and turning off motion smoothing — are all accessible through standard settings menus. our benchmarks show that these optimizations can reduce channel switching time by over 50%, improve 4k stream stability from approximately 93% to 97%, and free hundreds of megabytes of ram — enough for flash 4k iptv streams to maintain a rock-solid buffer even during peak usage. for the best experience, pair your optimized tv with a quality iptv player matched to your platform (see our <a href="/blog/best-iptv-players-2026" class="text-primary underline">best iptv players guide</a>). if buffering persists, the <a href="/blog/stop-iptv-buffering-forever" class="text-primary underline">buffering elimination guide</a> covers advanced network and server-side fixes, and the <a href="/blog/ultimate-iptv-setup-guide-2026" class="text-primary underline">ultimate setup guide</a> walks through hardware selection, vpn, and epg tuning. for those still comparing options, our <a href="/blog/iptv-vs-cable-vs-satellite-2026" class="text-primary underline">iptv vs cable vs satellite analysis</a> provides the cost and performance breakdown.</p>
