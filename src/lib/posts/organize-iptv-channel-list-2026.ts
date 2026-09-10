@@ -199,18 +199,6 @@ export const organizeIptvChannelList2026 = {
         </ul>
       </section>
 
-      
-      <!-- Section A: Hardware Video Decoding & Codec Performance -->
-      <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
-        <h2 class="text-3xl font-black text-white uppercase italic mb-6 text-primary">hardware video decoding & codec benchmarks</h2>
-        <p>
-          High-definition IPTV streaming relies on hardware-accelerated video decoding to render 60fps live broadcasts without CPU frame drops or thermal throttling.
-        </p>
-        <p class="mt-4">
-          <strong>H.264 vs HEVC H.265 vs AV1 Decoding:</strong> Modern streaming devices (such as Apple TV 4K, Nvidia Shield, and Fire TV Stick 4K Max) feature dedicated SoC hardware decoders that process HEVC (H.265) and AV1 video streams with low energy consumption. Utilizing hardware decoding (HW+) inside player settings reduces device operating temperatures and prevents playback stuttering during high-bitrate 4K broadcasts.
-        </p>
-      </section>
-    
 <!-- Conclusion -->
       <section class="mt-12 border-t border-white/10 pt-8">
         <h2 class="text-2xl font-black text-white uppercase italic mb-4">conclusion</h2>

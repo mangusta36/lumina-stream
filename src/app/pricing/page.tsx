@@ -127,6 +127,7 @@ export default function PricingPage() {
                 <a 
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(plan.waMessage)}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={`flex items-center justify-center gap-3 w-full py-5 rounded-[2rem] font-black text-xs tracking-[0.2em] transition-all active:scale-95 ${
                     plan.isPopular 
                     ? 'bg-primary text-white hover:bg-white hover:text-black shadow-xl shadow-primary/20' 

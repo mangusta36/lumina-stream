@@ -56,7 +56,7 @@ export const m3uVsXtreamCodesApiIptvGuide = {
       <section class="bg-white/5 p-8 rounded-[2rem] border border-white/10 shadow-2xl">
         <h2 class="text-2xl font-black text-primary uppercase italic mb-4">Quick Technical Comparison: M3U vs Xtream Codes API</h2>
         <p class="text-white font-medium not-italic leading-relaxed mb-4">
-          When configuring an IPTV service like <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a>, users choose between two primary connection formats: an <strong>M3U playlist URL</strong> (or downloadable <code>.m3u</code> text file) and an <strong>Xtream Codes API login</strong> (Server URL, Username, Password).
+          When configuring an IPTV service like <a href="/" class="text-primary underline underline-offset-4 font-bold">flash 4k iptv</a>, users choose between two primary connection formats: an <strong>M3U playlist URL</strong> (or downloadable <code>.m3u</code> text file) and an <strong>Xtream Codes API login</strong> (Server URL, Username, Password). If those credentials are rejected, our <a href="/blog/iptv-error-codes" class="text-primary underline underline-offset-4 font-bold">IPTV error codes guide</a> explains the difference between a 401 (login rejected outright) and a 403 (login accepted, but access still refused).
         </p>
         <div class="grid md:grid-cols-2 gap-6 text-sm not-italic mt-4">
           <div class="bg-black/40 p-6 rounded-2xl border border-white/10">

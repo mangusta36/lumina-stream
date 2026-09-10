@@ -89,7 +89,7 @@ export default function HeroPage() {
             <a href="#pricing" className="group relative px-12 py-5 bg-cyan-500 rounded-2xl font-black text-black uppercase tracking-tighter transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)] active:scale-95 text-lg">
               explore plans
             </a>
-            <a href={WHATSAPP_TRIAL_LINK} target="_blank" className="px-12 py-5 bg-white/5 border border-white/10 hover:bg-white/10 rounded-2xl font-black transition-all backdrop-blur-md text-white uppercase tracking-tighter text-lg">
+            <a href={WHATSAPP_TRIAL_LINK} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white/5 border border-white/10 hover:bg-white/10 rounded-2xl font-black transition-all backdrop-blur-md text-white uppercase tracking-tighter text-lg">
               GET TRIAL
             </a>
           </div>
@@ -159,7 +159,7 @@ export default function HeroPage() {
                   ))}
                 </ul>
 
-                <a href={plan.waLink} target="_blank" className={`block text-center py-5 rounded-2xl font-black uppercase tracking-tighter transition-all ${
+                <a href={plan.waLink} target="_blank" rel="noopener noreferrer" className={`block text-center py-5 rounded-2xl font-black uppercase tracking-tighter transition-all ${
                   plan.recommended ? 'bg-cyan-500 text-black shadow-lg shadow-cyan-500/20 hover:bg-cyan-400' : 'bg-white/5 text-white hover:bg-white/10'
                 }`}>
                   Subscribe Now

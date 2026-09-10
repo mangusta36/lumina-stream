@@ -141,7 +141,7 @@ export default function Home() {
 
       <Navbar />
 
-      <section id="home">
+      <section>
         <Hero />
       </section>
 
@@ -149,13 +149,13 @@ export default function Home() {
         <MoviesCarousel />
       </section>
 
-      <section id="why-us">
+      <section>
         <Features />
       </section>
 
       <SeoContent />
 
-      <section id="pricing">
+      <section>
         <Pricing />
       </section>
 

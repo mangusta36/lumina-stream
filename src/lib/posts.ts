@@ -28,6 +28,8 @@ import { iptvParentalControlsChildSafetyGuide } from "./posts/iptv-parental-cont
 import { iptvOnPcMacMobile2026 } from "./posts/iptv-on-pc-mac-mobile-2026";
 import { m3uVsXtreamCodesApiIptvGuide } from "./posts/m3u-vs-xtream-codes-api-iptv-guide";
 import { iptvInternetSpeedBandwidthRequirements } from "./posts/iptv-internet-speed-bandwidth-requirements";
+import { howToVerifyReal4kIptvStream } from "./posts/how-to-verify-real-4k-iptv-stream";
+import { iptvErrorCodes } from "./posts/iptv-error-codes";
 import { applyPostRewrite } from "./post-rewrites";
 
 export interface FaqItem {
@@ -107,4 +109,6 @@ export const blogPosts: BlogPost[] = sortByDate([
   iptvOnPcMacMobile2026,
   m3uVsXtreamCodesApiIptvGuide,
   iptvInternetSpeedBandwidthRequirements,
+  howToVerifyReal4kIptvStream,
+  iptvErrorCodes,
 ]).map(applyPostRewrite);
