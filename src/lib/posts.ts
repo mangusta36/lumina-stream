@@ -30,6 +30,8 @@ import { m3uVsXtreamCodesApiIptvGuide } from "./posts/m3u-vs-xtream-codes-api-ip
 import { iptvInternetSpeedBandwidthRequirements } from "./posts/iptv-internet-speed-bandwidth-requirements";
 import { howToVerifyReal4kIptvStream } from "./posts/how-to-verify-real-4k-iptv-stream";
 import { iptvErrorCodes } from "./posts/iptv-error-codes";
+import { hlsVsMpegTsIptv } from "./posts/hls-vs-mpeg-ts-iptv";
+import { iptvEpgXmltvTvgIdChannelMapping } from "./posts/iptv-epg-xmltv-tvg-id-channel-mapping";
 import { applyPostRewrite } from "./post-rewrites";
 
 export interface FaqItem {
@@ -73,7 +75,7 @@ export function isPublishedPost(post: BlogPost, now = new Date()): boolean {
 }
 
 export function getPublishedBlogPosts(now = new Date()): BlogPost[] {
-  return blogPosts.filter((post) => isPublishedPost(post, now));
+  return sortByDate(blogPosts.filter((post) => isPublishedPost(post, now)));
 }
 
 function sortByDate(posts: BlogPost[]): BlogPost[] {
@@ -111,4 +113,6 @@ export const blogPosts: BlogPost[] = sortByDate([
   iptvInternetSpeedBandwidthRequirements,
   howToVerifyReal4kIptvStream,
   iptvErrorCodes,
+  iptvEpgXmltvTvgIdChannelMapping,
+  hlsVsMpegTsIptv,
 ]).map(applyPostRewrite);

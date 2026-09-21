@@ -10,6 +10,7 @@ import {
   estimateReadingTime,
   getPublishedBlogPosts,
   isPublishedPost,
+  parsePostDate,
 } from "../../../lib/posts";
 import { slugifyCategory, getPostsByCategory } from "../../../lib/categories";
 
@@ -24,7 +25,7 @@ export async function generateStaticParams() {
 }
 
 function toIsoDate(dateStr: string): string {
-  const d = new Date(dateStr);
+  const d = parsePostDate(dateStr);
   return isNaN(d.getTime()) ? dateStr : d.toISOString().split("T")[0];
 }
 

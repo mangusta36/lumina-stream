@@ -7,6 +7,7 @@ export const fixEpgCatchupIptv2026 = {
   metaDescription: "learn how to fix missing epg data, wrong times, and catch-up tv issues on flash 4k iptv with a practical 2026 troubleshooting checklist.",
   category: "TROUBLESHOOTING",
   date: "Jun 9, 2026",
+  lastModified: "Sep 20, 2026",
   author: "FLASH TEAM",
   image: "/images/flash4k-blog-devices.webp",
   imageAlt: "a living room setup featuring a tablet, smartphone, tv, and remote control for managing flash 4k iptv playback",
@@ -19,6 +20,7 @@ export const fixEpgCatchupIptv2026 = {
   content: `    <h2 class="text-4xl font-extrabold mb-6">IPTV EPG Fix Guide 2026 | Flash 4K IPTV Catch-Up TV</h2>
 
     <div class="space-y-10 text-gray-300 italic text-lg leading-relaxed">
+      <p>For the technical background behind missing listings and incorrect times, read our <a href="/blog/iptv-epg-xmltv-tvg-id-channel-mapping" class="text-primary underline">IPTV EPG and XMLTV channel mapping explainer</a>. It shows how playlist identifiers, programme records and timezone offsets fit together; this guide focuses on restoring EPG and catch-up playback.</p>
       <section>
         <h2 class="text-4xl font-black text-white uppercase italic mb-6 border-l-8 border-primary pl-6">1. what epg actually depends on</h2>
         <p>
