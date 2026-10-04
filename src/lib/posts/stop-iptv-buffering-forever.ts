@@ -136,6 +136,8 @@ export const stopIptvBufferingForever = {
           <li><a href="/blog/ultimate-iptv-setup-guide-2026" class="text-primary underline">Ultimate IPTV setup guide</a> — complete performance checklist from day one.</li>
           <li><a href="/blog/smart-tv-optimization-guide" class="text-primary underline">Smart TV optimization guide</a> — TV-side settings to improve streaming stability.</li>
           <li><a href="/blog/iptv-sports-fans-2026-guide" class="text-primary underline">IPTV for sports fans 2026</a> — zero-buffering sports streaming setup.</li>
+          <li><a href="/blog/nfl-international-games-2026-watch-guide" class="text-primary underline">NFL International Games 2026 viewing guide</a> — pre-kickoff checks for early international games.</li>
+          <li><a href="/blog/f1-united-states-grand-prix-2026-watch-guide" class="text-primary underline">2026 F1 United States Grand Prix guide</a> — session timing and live race-day troubleshooting.</li>
         </ul>
       </section>
 

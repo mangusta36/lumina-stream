@@ -196,6 +196,8 @@ export const iptvSportsFans2026Guide = {
         <h3 class="text-xl font-black text-white uppercase italic mb-4">further reading</h3>
         <ul class="list-disc ml-6 space-y-2 text-sm text-gray-300">
           <li><a href="/blog/ultimate-iptv-setup-guide-2026" class="text-primary underline">Ultimate IPTV Setup Guide 2026</a> — complete walkthrough from subscription to first stream.</li>
+          <li><a href="/blog/nfl-international-games-2026-watch-guide" class="text-primary underline">NFL International Games 2026 viewing guide</a> — London, Paris, Madrid, and U.S. viewing checks.</li>
+          <li><a href="/blog/f1-united-states-grand-prix-2026-watch-guide" class="text-primary underline">2026 F1 United States Grand Prix viewing guide</a> — COTA schedule, Apple TV, and session times.</li>
           <li><a href="/blog/stop-iptv-buffering-forever" class="text-primary underline">Stop IPTV Buffering Forever</a> — eliminate lag and freezing during live matches with advanced network fixes.</li>
           <li><a href="/blog/top-10-android-boxes-2026" class="text-primary underline">Top 10 Android Boxes 2026</a> — hardware recommendations for 4K sports streaming.</li>
           <li><a href="/blog/ultimate-home-cinema-iptv-2026" class="text-primary underline">Ultimate Home Cinema IPTV 2026</a> — build a cinema worthy of the biggest games.</li>

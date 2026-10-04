@@ -32,6 +32,8 @@ import { howToVerifyReal4kIptvStream } from "./posts/how-to-verify-real-4k-iptv-
 import { iptvErrorCodes } from "./posts/iptv-error-codes";
 import { hlsVsMpegTsIptv } from "./posts/hls-vs-mpeg-ts-iptv";
 import { iptvEpgXmltvTvgIdChannelMapping } from "./posts/iptv-epg-xmltv-tvg-id-channel-mapping";
+import { nflInternationalGames2026WatchGuide } from "./posts/nfl-international-games-2026-watch-guide";
+import { f1UnitedStatesGrandPrix2026WatchGuide } from "./posts/f1-united-states-grand-prix-2026-watch-guide";
 import { applyPostRewrite } from "./post-rewrites";
 
 export interface FaqItem {
@@ -79,10 +81,14 @@ export function getPublishedBlogPosts(now = new Date()): BlogPost[] {
 }
 
 function sortByDate(posts: BlogPost[]): BlogPost[] {
-  return [...posts].sort((a, b) => parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime());
+  return [...posts].sort(
+    (a, b) => parsePostDate(b.date).getTime() - parsePostDate(a.date).getTime()
+  );
 }
 
 export const blogPosts: BlogPost[] = sortByDate([
+  nflInternationalGames2026WatchGuide,
+  f1UnitedStatesGrandPrix2026WatchGuide,
   organizeIptvChannelList2026,
   fixEpgCatchupIptv2026,
   ultimateIptvSetupGuide2026,
